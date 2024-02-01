@@ -40,63 +40,7 @@ public class ChatGLMAIServiceController {
 
     @Resource
     private ThreadPoolExecutor threadPoolExecutor;
-    /*
-    curl -X POST \
-        http://localhost:8090/api/paas/v4/chat/completions \
-        -H "Content-Type: application/json" \
-        -d '{
-          "model":"glm-3-turbo",
-          "stream": "true",
-          "messages": [
-              {
-                  "role": "user",
-                  "content": "写个java冒泡排序"
-              }
-          ]
-        }'
-
-curl -X POST \
-        -H "Authorization: Bearer 9a69187ff54806e6294ec93bb453f54b.NfL5iqpVNXnj2g7P" \
-        -H "Content-Type: application/json" \
-        -H "User-Agent: Mozilla/4.0 (compatible; MSIE 5.0; Windows NT; DigExt)" \
-        -H "Accept: text/event-stream" \
-        -d '{
-        "top_p": 0.7,
-        "sseFormat": "data",
-        "temperature": 0.9,
-        "incremental": true,
-        "request_id": "xfg-1696992276607",
-        "prompt": [
-        {
-        "role": "user",
-        "content": "写个java冒泡排序"
-        }
-        ]
-        }' \
-  http://open.bigmodel.cn/api/paas/v4/chat/completions
-
-curl -X POST \
-        -H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiIsInNpZ25fdHlwZSI6IlNJR04ifQ.eyJhcGlfa2V5IjoiOWE2OTE4N2ZmNTQ4MDZlNjI5NGVjOTNiYjQ1M2Y1NGIiLCJleHAiOjE3MDY3NzAxMjMwODQsInRpbWVzdGFtcCI6MTcwNjc2ODMyMzA4NX0.edKgbou_FscD1u61HiY3tUWgyA6_32kjJFFaYg4ciKQ" \
-        -H "Content-Type: application/json" \
-        -H "User-Agent: Mozilla/4.0 (compatible; MSIE 5.0; Windows NT; DigExt)" \
-        -H "Accept: text/event-stream" \
-        -d '{
-        "top_p": 0.7,
-        "sseFormat": "data",
-        "temperature": 0.9,
-        "incremental": true,
-        "request_id": "xfg-1696992276607",
-        "prompt": [
-        {
-        "role": "user",
-        "content": "写个java冒泡排序"
-        }
-        ]
-        }' \
-  http://open.bigmodel.cn/api/paas/v3/model-api/chatglm_lite/sse-invoke
-
-
-
+   /*
         curl -X POST \
         http://localhost:8090/api/paas/v4/chat/completions \
         -H 'Content-Type: application/json;charset=utf-8' \
