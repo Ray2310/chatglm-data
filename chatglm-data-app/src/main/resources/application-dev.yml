@@ -1,0 +1,45 @@
+server:
+  port: 8090
+
+# 应用配置
+app:
+  config:
+    # 版本，方便通过接口版本升级
+    api-version: v1
+    # 跨域，开发阶段可以设置为 * 不限制
+    cross-origin: '*'
+
+# 线程池配置
+thread:
+  pool:
+    executor:
+      config:
+        core-pool-size: 20
+        max-pool-size: 50
+        keep-alive-time: 5000
+        block-queue-size: 5000
+        policy: CallerRunsPolicy
+
+# ChatGPT SDK Config
+#chatgpt:
+#  sdk:
+#    config:
+#      # 官网地址 https://api.openai.com/
+#      api-host: https://pro-share-aws-api.zcyai.com/
+#      # 官网申请 https://platform.openai.com/account/api-keys
+#      api-key: sk-dS9kPBZCiUXEN9jh133c8f44A5984dAc8f1350E18c716aDb
+#      # 自主申请 http://api.xfg.im:8080/authorize?username=xfg&password=123 - 有时效性，主要为了大家学习使用
+#      auth-token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ4ZmciLCJleHAiOjE2OTAwMzI5MDQsImlhdCI6MTY5MDAyOTMwNCwianRpIjoiOTBkNzc5NjYtOWM5MS00MGVmLWJmNjktNzYzNDljNmUyMDkyIiwidXNlcm5hbWUiOiJ4ZmcifQ.x7P6Rc249SgbxpqWhgKahYP8A8AllNI_26DV08a1AZs
+#
+## 日志
+logging:
+  level:
+    root: info
+  config: classpath:logback-spring.xml
+  # ChatGPT SDK Config
+chatglm:
+  sdk:
+    config:
+      enabled: false
+      api-host: https://open.bigmodel.cn/
+      api-secret-key: 9a69187ff54806e6294ec93bb453f54b.NfL5iqpVNXnj2g7P

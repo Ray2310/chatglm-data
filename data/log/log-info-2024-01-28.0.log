@@ -1,0 +1,309 @@
+24-01-28.20:30:56.778 [main            ] INFO  Application            - Starting Application using Java 1.8.0_201 on Rayce with PID 24946 (/home/rayce/Udatabase/study/Gpt_Item/PlanetItemGpt-data/chatgpt-data-app/target/classes started by rayce in /home/rayce/Udatabase/study/Gpt_Item/PlanetItemGpt-data)
+24-01-28.20:30:56.780 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-01-28.20:30:57.459 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8090 (http)
+24-01-28.20:30:57.464 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+24-01-28.20:30:57.465 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-01-28.20:30:57.465 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-01-28.20:30:57.538 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-01-28.20:30:57.538 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 732 ms
+24-01-28.20:30:57.910 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
+24-01-28.20:30:57.918 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8090 (http) with context path ''
+24-01-28.20:30:57.925 [main            ] INFO  Application            - Started Application in 1.55 seconds (JVM running for 2.186)
+24-01-28.20:33:06.249 [http-nio-8090-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+24-01-28.20:33:06.249 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+24-01-28.20:33:06.250 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Completed initialization in 0 ms
+24-01-28.20:33:06.569 [http-nio-8090-exec-2] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：gpt-3.5-turbo 请求信息：[{"content":"请问有什么需要帮助的吗？","role":"system"},{"content":"你好","role":"user"}]
+24-01-28.20:33:06.793 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - --> POST https://pro-share-aws-api.zcyai.com/v1/chat/completions
+24-01-28.20:33:06.794 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Content-Type: application/json; charset=utf-8
+24-01-28.20:33:06.794 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Content-Length: 219
+24-01-28.20:33:06.794 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Accept: text/event-stream
+24-01-28.20:33:06.794 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - --> END POST
+24-01-28.20:33:10.957 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - <-- 200 OK https://pro-share-aws-api.zcyai.com/v1/chat/completions?token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ4ZmciLCJleHAiOjE2OTAwMzI5MDQsImlhdCI6MTY5MDAyOTMwNCwianRpIjoiOTBkNzc5NjYtOWM5MS00MGVmLWJmNjktNzYzNDljNmUyMDkyIiwidXNlcm5hbWUiOiJ4ZmcifQ.x7P6Rc249SgbxpqWhgKahYP8A8AllNI_26DV08a1AZs (4162ms)
+24-01-28.20:33:10.958 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Content-Type: text/event-stream
+24-01-28.20:33:10.958 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Transfer-Encoding: chunked
+24-01-28.20:33:10.958 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Connection: keep-alive
+24-01-28.20:33:10.958 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Cache-Control: no-cache
+24-01-28.20:33:10.959 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Oneapi-Request-Id: 202401282033096494374310rReVXuF
+24-01-28.20:33:10.960 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Date: Sun, 28 Jan 2024 12:33:10 GMT
+24-01-28.20:33:10.960 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Cache: Miss from cloudfront
+24-01-28.20:33:10.960 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Via: 1.1 fbd2b51fce9ee4f3aa7b93dbbda3d698.cloudfront.net (CloudFront)
+24-01-28.20:33:10.960 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Amz-Cf-Pop: FRA56-P8
+24-01-28.20:33:10.960 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Alt-Svc: h3=":443"; ma=86400
+24-01-28.20:33:10.960 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Amz-Cf-Id: dTk9jLig_VEmnnYzOuC-957_A7jf5UsaXedOaZYYpy_QyTXCtr-g4A==
+24-01-28.20:33:10.961 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-XSS-Protection: 1; mode=block
+24-01-28.20:33:10.962 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Frame-Options: SAMEORIGIN
+24-01-28.20:33:10.962 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Referrer-Policy: strict-origin-when-cross-origin
+24-01-28.20:33:10.962 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Content-Type-Options: nosniff
+24-01-28.20:33:10.962 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Strict-Transport-Security: max-age=31536000
+24-01-28.20:33:10.963 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Vary: Origin
+24-01-28.20:33:10.963 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - <-- END HTTP
+24-01-28.20:33:11.627 [http-nio-8090-exec-3] INFO  AbstractChatService    - 流式问答请求完成，使用模型：gpt-3.5-turbo
+24-01-28.20:33:32.467 [http-nio-8090-exec-4] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：gpt-3.5-turbo 请求信息：[{"content":"请问有什么需要帮助的吗？","role":"system"},{"content":"我想让你担任Java开发工程师面试官。我将成为候选人，您将向我询问Java开发工程师职位的面试问题。我希望你只作为面试官回答。不要一次写出所有的问题。我希望你只对我进行采访。问我问题，等待我的回答。不要写解释。像面试官一样一个一个问我，等我回答。我的第一句话是“面试官你好","role":"user"}]
+24-01-28.20:33:32.477 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - --> POST https://pro-share-aws-api.zcyai.com/v1/chat/completions
+24-01-28.20:33:32.477 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Content-Type: application/json; charset=utf-8
+24-01-28.20:33:32.477 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Content-Length: 605
+24-01-28.20:33:32.477 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Accept: text/event-stream
+24-01-28.20:33:32.477 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - --> END POST
+24-01-28.20:33:33.674 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - <-- 200 OK https://pro-share-aws-api.zcyai.com/v1/chat/completions?token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ4ZmciLCJleHAiOjE2OTAwMzI5MDQsImlhdCI6MTY5MDAyOTMwNCwianRpIjoiOTBkNzc5NjYtOWM5MS00MGVmLWJmNjktNzYzNDljNmUyMDkyIiwidXNlcm5hbWUiOiJ4ZmcifQ.x7P6Rc249SgbxpqWhgKahYP8A8AllNI_26DV08a1AZs (1196ms)
+24-01-28.20:33:33.674 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Content-Type: text/event-stream
+24-01-28.20:33:33.674 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Transfer-Encoding: chunked
+24-01-28.20:33:33.674 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Connection: keep-alive
+24-01-28.20:33:33.674 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Cache-Control: no-cache
+24-01-28.20:33:33.674 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Oneapi-Request-Id: 20240128203332812952116pgqZjOwo
+24-01-28.20:33:33.674 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Date: Sun, 28 Jan 2024 12:33:33 GMT
+24-01-28.20:33:33.674 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Cache: Miss from cloudfront
+24-01-28.20:33:33.674 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Via: 1.1 fbd2b51fce9ee4f3aa7b93dbbda3d698.cloudfront.net (CloudFront)
+24-01-28.20:33:33.674 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Amz-Cf-Pop: FRA56-P8
+24-01-28.20:33:33.674 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Alt-Svc: h3=":443"; ma=86400
+24-01-28.20:33:33.674 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Amz-Cf-Id: UCfdn5gEvbckIb0x8Vcuwg9-nQPU5I4oMAn5pPfB0Ck0oYzuzR0CRg==
+24-01-28.20:33:33.674 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-XSS-Protection: 1; mode=block
+24-01-28.20:33:33.674 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Frame-Options: SAMEORIGIN
+24-01-28.20:33:33.674 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Referrer-Policy: strict-origin-when-cross-origin
+24-01-28.20:33:33.674 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Content-Type-Options: nosniff
+24-01-28.20:33:33.674 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Strict-Transport-Security: max-age=31536000
+24-01-28.20:33:33.675 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Vary: Origin
+24-01-28.20:33:33.675 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - <-- END HTTP
+24-01-28.20:33:36.837 [http-nio-8090-exec-5] INFO  AbstractChatService    - 流式问答请求完成，使用模型：gpt-3.5-turbo
+24-01-28.20:33:42.164 [http-nio-8090-exec-6] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：gpt-3.5-turbo 请求信息：[{"content":"我想让你担任Java开发工程师面试官。我将成为候选人，您将向我询问Java开发工程师职位的面试问题。我希望你只作为面试官回答。不要一次写出所有的问题。我希望你只对我进行采访。问我问题，等待我的回答。不要写解释。像面试官一样一个一个问我，等我回答。我的第一句话是“面试官你好","role":"user"},{"content":"面试官：你好！感谢你对Java开发工程师职位的兴趣。我们将进行一系列的面试问题，以了解你的技能和经验。首先，我想问你在Java开发方面有多少年的经验？","role":"system"},{"content":"10年","role":"user"}]
+24-01-28.20:33:42.175 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - --> POST https://pro-share-aws-api.zcyai.com/v1/chat/completions
+24-01-28.20:33:42.175 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Content-Type: application/json; charset=utf-8
+24-01-28.20:33:42.175 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Content-Length: 812
+24-01-28.20:33:42.175 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Accept: text/event-stream
+24-01-28.20:33:42.175 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - --> END POST
+24-01-28.20:33:43.556 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - <-- 200 OK https://pro-share-aws-api.zcyai.com/v1/chat/completions?token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ4ZmciLCJleHAiOjE2OTAwMzI5MDQsImlhdCI6MTY5MDAyOTMwNCwianRpIjoiOTBkNzc5NjYtOWM5MS00MGVmLWJmNjktNzYzNDljNmUyMDkyIiwidXNlcm5hbWUiOiJ4ZmcifQ.x7P6Rc249SgbxpqWhgKahYP8A8AllNI_26DV08a1AZs (1381ms)
+24-01-28.20:33:43.556 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Content-Type: text/event-stream
+24-01-28.20:33:43.556 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Transfer-Encoding: chunked
+24-01-28.20:33:43.556 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Connection: keep-alive
+24-01-28.20:33:43.556 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Cache-Control: no-cache
+24-01-28.20:33:43.556 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Oneapi-Request-Id: 20240128203342505286671o1GHcOgB
+24-01-28.20:33:43.556 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Date: Sun, 28 Jan 2024 12:33:43 GMT
+24-01-28.20:33:43.556 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Cache: Miss from cloudfront
+24-01-28.20:33:43.556 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Via: 1.1 fbd2b51fce9ee4f3aa7b93dbbda3d698.cloudfront.net (CloudFront)
+24-01-28.20:33:43.557 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Amz-Cf-Pop: FRA56-P8
+24-01-28.20:33:43.557 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Alt-Svc: h3=":443"; ma=86400
+24-01-28.20:33:43.557 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Amz-Cf-Id: gaaHRnxbbPGlzC9Pn2Ddd-iJ8ad073faX4Px5A4nG4vrqkR-UtkRUg==
+24-01-28.20:33:43.557 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-XSS-Protection: 1; mode=block
+24-01-28.20:33:43.557 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Frame-Options: SAMEORIGIN
+24-01-28.20:33:43.557 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Referrer-Policy: strict-origin-when-cross-origin
+24-01-28.20:33:43.557 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Content-Type-Options: nosniff
+24-01-28.20:33:43.557 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Strict-Transport-Security: max-age=31536000
+24-01-28.20:33:43.557 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Vary: Origin
+24-01-28.20:33:43.557 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - <-- END HTTP
+24-01-28.20:33:45.076 [http-nio-8090-exec-7] INFO  AbstractChatService    - 流式问答请求完成，使用模型：gpt-3.5-turbo
+24-01-28.20:33:56.635 [http-nio-8090-exec-8] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：gpt-3.5-turbo 请求信息：[{"content":"10年","role":"user"},{"content":"面试官：很好，那么请问你在Java开发中最熟悉的技术栈是什么？","role":"system"},{"content":"啥都会","role":"user"}]
+24-01-28.20:33:56.641 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - --> POST https://pro-share-aws-api.zcyai.com/v1/chat/completions
+24-01-28.20:33:56.641 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Content-Type: application/json; charset=utf-8
+24-01-28.20:33:56.641 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Content-Length: 305
+24-01-28.20:33:56.641 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Accept: text/event-stream
+24-01-28.20:33:56.641 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - --> END POST
+24-01-28.20:33:57.985 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - <-- 200 OK https://pro-share-aws-api.zcyai.com/v1/chat/completions?token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ4ZmciLCJleHAiOjE2OTAwMzI5MDQsImlhdCI6MTY5MDAyOTMwNCwianRpIjoiOTBkNzc5NjYtOWM5MS00MGVmLWJmNjktNzYzNDljNmUyMDkyIiwidXNlcm5hbWUiOiJ4ZmcifQ.x7P6Rc249SgbxpqWhgKahYP8A8AllNI_26DV08a1AZs (1343ms)
+24-01-28.20:33:57.985 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Content-Type: text/event-stream
+24-01-28.20:33:57.985 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Transfer-Encoding: chunked
+24-01-28.20:33:57.985 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Connection: keep-alive
+24-01-28.20:33:57.985 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Cache-Control: no-cache
+24-01-28.20:33:57.985 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Oneapi-Request-Id: 20240128203356973911972coQmhvEm
+24-01-28.20:33:57.986 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Date: Sun, 28 Jan 2024 12:33:57 GMT
+24-01-28.20:33:57.986 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Cache: Miss from cloudfront
+24-01-28.20:33:57.986 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Via: 1.1 fbd2b51fce9ee4f3aa7b93dbbda3d698.cloudfront.net (CloudFront)
+24-01-28.20:33:57.986 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Amz-Cf-Pop: FRA56-P8
+24-01-28.20:33:57.986 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Alt-Svc: h3=":443"; ma=86400
+24-01-28.20:33:57.986 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Amz-Cf-Id: ZypwY7ZgT82gUF7LLQjmAPiL5IDxUOy8wu6ABaExWAowpcSowvm1IA==
+24-01-28.20:33:57.986 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-XSS-Protection: 1; mode=block
+24-01-28.20:33:57.986 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Frame-Options: SAMEORIGIN
+24-01-28.20:33:57.986 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Referrer-Policy: strict-origin-when-cross-origin
+24-01-28.20:33:57.986 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Content-Type-Options: nosniff
+24-01-28.20:33:57.987 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Strict-Transport-Security: max-age=31536000
+24-01-28.20:33:57.987 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Vary: Origin
+24-01-28.20:33:57.987 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - <-- END HTTP
+24-01-28.20:34:01.231 [http-nio-8090-exec-9] INFO  AbstractChatService    - 流式问答请求完成，使用模型：gpt-3.5-turbo
+24-01-28.20:34:24.419 [http-nio-8090-exec-10] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：gpt-3.5-turbo 请求信息：[{"content":"啥都会","role":"user"},{"content":"面试官：那太棒了！既然你对Java开发技术栈都很熟悉，那么请问你在这10年的开发经验中，最有成就感的项目是什么？可以给我们讲讲吗？","role":"system"},{"content":"就是开发了个OpenAI的项目， 名字叫ChatGPT","role":"user"}]
+24-01-28.20:34:24.425 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - --> POST https://pro-share-aws-api.zcyai.com/v1/chat/completions
+24-01-28.20:34:24.425 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Content-Type: application/json; charset=utf-8
+24-01-28.20:34:24.425 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Content-Length: 451
+24-01-28.20:34:24.425 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Accept: text/event-stream
+24-01-28.20:34:24.426 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - --> END POST
+24-01-28.20:34:25.634 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - <-- 200 OK https://pro-share-aws-api.zcyai.com/v1/chat/completions?token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ4ZmciLCJleHAiOjE2OTAwMzI5MDQsImlhdCI6MTY5MDAyOTMwNCwianRpIjoiOTBkNzc5NjYtOWM5MS00MGVmLWJmNjktNzYzNDljNmUyMDkyIiwidXNlcm5hbWUiOiJ4ZmcifQ.x7P6Rc249SgbxpqWhgKahYP8A8AllNI_26DV08a1AZs (1208ms)
+24-01-28.20:34:25.634 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Content-Type: text/event-stream
+24-01-28.20:34:25.634 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Transfer-Encoding: chunked
+24-01-28.20:34:25.634 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Connection: keep-alive
+24-01-28.20:34:25.634 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Cache-Control: no-cache
+24-01-28.20:34:25.634 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Oneapi-Request-Id: 20240128203424759392515TUgeIKAZ
+24-01-28.20:34:25.634 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Date: Sun, 28 Jan 2024 12:34:25 GMT
+24-01-28.20:34:25.635 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Cache: Miss from cloudfront
+24-01-28.20:34:25.635 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Via: 1.1 fbd2b51fce9ee4f3aa7b93dbbda3d698.cloudfront.net (CloudFront)
+24-01-28.20:34:25.635 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Amz-Cf-Pop: FRA56-P8
+24-01-28.20:34:25.635 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Alt-Svc: h3=":443"; ma=86400
+24-01-28.20:34:25.635 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Amz-Cf-Id: sqwKEaIeqDkYMaHysoIA6QhKhcGYtroAi1tmGle-syXZhRA3U3y-ZA==
+24-01-28.20:34:25.635 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-XSS-Protection: 1; mode=block
+24-01-28.20:34:25.635 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Frame-Options: SAMEORIGIN
+24-01-28.20:34:25.635 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Referrer-Policy: strict-origin-when-cross-origin
+24-01-28.20:34:25.635 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Content-Type-Options: nosniff
+24-01-28.20:34:25.635 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Strict-Transport-Security: max-age=31536000
+24-01-28.20:34:25.635 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Vary: Origin
+24-01-28.20:34:25.635 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - <-- END HTTP
+24-01-28.20:34:27.808 [http-nio-8090-exec-1] INFO  AbstractChatService    - 流式问答请求完成，使用模型：gpt-3.5-turbo
+24-01-28.20:34:37.724 [http-nio-8090-exec-2] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：gpt-3.5-turbo 请求信息：[{"content":"就是开发了个OpenAI的项目， 名字叫ChatGPT","role":"user"},{"content":"面试官：哇，ChatGPT听起来很有趣！能否请你介绍一下这个项目的背景和你在其中的角色呢？","role":"system"},{"content":"啥都干","role":"user"}]
+24-01-28.20:34:37.728 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - --> POST https://pro-share-aws-api.zcyai.com/v1/chat/completions
+24-01-28.20:34:37.728 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Content-Type: application/json; charset=utf-8
+24-01-28.20:34:37.728 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Content-Length: 389
+24-01-28.20:34:37.729 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Accept: text/event-stream
+24-01-28.20:34:37.729 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - --> END POST
+24-01-28.20:34:39.244 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - <-- 200 OK https://pro-share-aws-api.zcyai.com/v1/chat/completions?token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ4ZmciLCJleHAiOjE2OTAwMzI5MDQsImlhdCI6MTY5MDAyOTMwNCwianRpIjoiOTBkNzc5NjYtOWM5MS00MGVmLWJmNjktNzYzNDljNmUyMDkyIiwidXNlcm5hbWUiOiJ4ZmcifQ.x7P6Rc249SgbxpqWhgKahYP8A8AllNI_26DV08a1AZs (1515ms)
+24-01-28.20:34:39.244 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Content-Type: text/event-stream
+24-01-28.20:34:39.244 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Transfer-Encoding: chunked
+24-01-28.20:34:39.244 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Connection: keep-alive
+24-01-28.20:34:39.244 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Cache-Control: no-cache
+24-01-28.20:34:39.244 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Oneapi-Request-Id: 20240128203438593500967Ut01y3s
+24-01-28.20:34:39.244 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Date: Sun, 28 Jan 2024 12:34:39 GMT
+24-01-28.20:34:39.244 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Cache: Miss from cloudfront
+24-01-28.20:34:39.244 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Via: 1.1 fbd2b51fce9ee4f3aa7b93dbbda3d698.cloudfront.net (CloudFront)
+24-01-28.20:34:39.244 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Amz-Cf-Pop: FRA56-P8
+24-01-28.20:34:39.244 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Alt-Svc: h3=":443"; ma=86400
+24-01-28.20:34:39.244 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Amz-Cf-Id: 6KwtVDreyWRzISQqNpH1bavUkE8M4ZZKM3Pu0umRgeIIsbqMGg-Xzw==
+24-01-28.20:34:39.245 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-XSS-Protection: 1; mode=block
+24-01-28.20:34:39.245 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Frame-Options: SAMEORIGIN
+24-01-28.20:34:39.245 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Referrer-Policy: strict-origin-when-cross-origin
+24-01-28.20:34:39.245 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Content-Type-Options: nosniff
+24-01-28.20:34:39.245 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Strict-Transport-Security: max-age=31536000
+24-01-28.20:34:39.245 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Vary: Origin
+24-01-28.20:34:39.245 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - <-- END HTTP
+24-01-28.20:34:54.866 [http-nio-8090-exec-3] INFO  AbstractChatService    - 流式问答请求完成，使用模型：gpt-3.5-turbo
+24-01-28.20:44:15.948 [http-nio-8090-exec-5] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：gpt-3.5-turbo-16k 请求信息：[{"content":"啥都干","role":"user"},{"content":"ChatGPT是一个由OpenAI开发的项目，旨在构建一个能够进行自然语言对话的人工智能模型。它基于GPT（Generative Pre-trained Transformer）架构，通过大规模的预训练和微调来实现对话生成的能力。
+
+在这个项目中，我扮演了开发团队的一员，负责参与模型的开发和优化。我与团队成员合作，进行了数据收集、数据清洗和模型训练等工作。我还参与了模型的评估和改进，以确保ChatGPT能够提供高质量、流畅的对话体验。
+
+除了开发工作，我还负责与用户进行交互，收集反馈并进行改进。通过与用户的互动，我们能够不断优化ChatGPT的性能和功能，以满足用户的需求。
+
+总的来说，我在ChatGPT项目中扮演了一个多面手的角色，既参与了技术开发，也与用户进行了互动和反馈收集。这个项目对我来说是一个很有挑战性和有意义的经历。","role":"system"},{"content":"你好？ 
+","role":"user"}]
+24-01-28.20:44:15.957 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - --> POST https://pro-share-aws-api.zcyai.com/v1/chat/completions
+24-01-28.20:44:15.957 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Content-Type: application/json; charset=utf-8
+24-01-28.20:44:15.957 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Content-Length: 1186
+24-01-28.20:44:15.957 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Accept: text/event-stream
+24-01-28.20:44:15.957 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - --> END POST
+24-01-28.20:44:19.110 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - <-- 200 OK https://pro-share-aws-api.zcyai.com/v1/chat/completions?token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ4ZmciLCJleHAiOjE2OTAwMzI5MDQsImlhdCI6MTY5MDAyOTMwNCwianRpIjoiOTBkNzc5NjYtOWM5MS00MGVmLWJmNjktNzYzNDljNmUyMDkyIiwidXNlcm5hbWUiOiJ4ZmcifQ.x7P6Rc249SgbxpqWhgKahYP8A8AllNI_26DV08a1AZs (3152ms)
+24-01-28.20:44:19.110 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Content-Type: text/event-stream
+24-01-28.20:44:19.110 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Transfer-Encoding: chunked
+24-01-28.20:44:19.110 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Connection: keep-alive
+24-01-28.20:44:19.110 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Cache-Control: no-cache
+24-01-28.20:44:19.110 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Oneapi-Request-Id: 20240128204417516278038rEOJOxec
+24-01-28.20:44:19.111 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Date: Sun, 28 Jan 2024 12:44:18 GMT
+24-01-28.20:44:19.111 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Cache: Miss from cloudfront
+24-01-28.20:44:19.111 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Via: 1.1 af3799c72ed879abb7633a4c3e57502e.cloudfront.net (CloudFront)
+24-01-28.20:44:19.111 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Amz-Cf-Pop: FRA56-P8
+24-01-28.20:44:19.111 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Alt-Svc: h3=":443"; ma=86400
+24-01-28.20:44:19.111 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Amz-Cf-Id: nf4ACdtn7H2t2CxmMOjQCJjqzxL87877oQQzJpT_qMuthXYM1mupvg==
+24-01-28.20:44:19.111 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-XSS-Protection: 1; mode=block
+24-01-28.20:44:19.111 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Frame-Options: SAMEORIGIN
+24-01-28.20:44:19.111 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Referrer-Policy: strict-origin-when-cross-origin
+24-01-28.20:44:19.111 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Content-Type-Options: nosniff
+24-01-28.20:44:19.111 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Strict-Transport-Security: max-age=31536000
+24-01-28.20:44:19.111 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Vary: Origin
+24-01-28.20:44:19.112 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - <-- END HTTP
+24-01-28.20:44:21.339 [http-nio-8090-exec-6] INFO  AbstractChatService    - 流式问答请求完成，使用模型：gpt-3.5-turbo-16k
+24-01-28.20:49:45.852 [http-nio-8090-exec-8] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：gpt-3.5-turbo 请求信息：[{"content":"请问有什么需要帮助的吗？","role":"system"},{"content":"我想让你充当 Linux 终端。我将输入命令，您将回复终端应显示的内容。我希望您只在一个唯一的代码块内回复终端输出，而不是其他任何内容。不要写解释。除非我指示您这样做，否则不要键入命令。当我需要用英语告诉你一些事情时，我会把文字放在中括号内[就像这样]。我的第一个命令是 pwd
+","role":"user"}]
+24-01-28.20:49:45.861 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - --> POST https://pro-share-aws-api.zcyai.com/v1/chat/completions
+24-01-28.20:49:45.862 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Content-Type: application/json; charset=utf-8
+24-01-28.20:49:45.862 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Content-Length: 606
+24-01-28.20:49:45.862 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Accept: text/event-stream
+24-01-28.20:49:45.862 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - --> END POST
+24-01-28.20:49:48.727 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - <-- 200 OK https://pro-share-aws-api.zcyai.com/v1/chat/completions?token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ4ZmciLCJleHAiOjE2OTAwMzI5MDQsImlhdCI6MTY5MDAyOTMwNCwianRpIjoiOTBkNzc5NjYtOWM5MS00MGVmLWJmNjktNzYzNDljNmUyMDkyIiwidXNlcm5hbWUiOiJ4ZmcifQ.x7P6Rc249SgbxpqWhgKahYP8A8AllNI_26DV08a1AZs (2864ms)
+24-01-28.20:49:48.727 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Content-Type: text/event-stream
+24-01-28.20:49:48.727 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Transfer-Encoding: chunked
+24-01-28.20:49:48.727 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Connection: keep-alive
+24-01-28.20:49:48.728 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Cache-Control: no-cache
+24-01-28.20:49:48.728 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Oneapi-Request-Id: 2024012820494799358350FC7sNo33
+24-01-28.20:49:48.728 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Date: Sun, 28 Jan 2024 12:49:48 GMT
+24-01-28.20:49:48.728 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Cache: Miss from cloudfront
+24-01-28.20:49:48.728 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Via: 1.1 fbd2b51fce9ee4f3aa7b93dbbda3d698.cloudfront.net (CloudFront)
+24-01-28.20:49:48.728 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Amz-Cf-Pop: FRA56-P8
+24-01-28.20:49:48.728 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Alt-Svc: h3=":443"; ma=86400
+24-01-28.20:49:48.728 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Amz-Cf-Id: hnKJgfIdU-GfZoR8TgBU5yx90r5epTvGZKyiqK41ZmqttInY-cAiOg==
+24-01-28.20:49:48.728 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-XSS-Protection: 1; mode=block
+24-01-28.20:49:48.728 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Frame-Options: SAMEORIGIN
+24-01-28.20:49:48.728 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Referrer-Policy: strict-origin-when-cross-origin
+24-01-28.20:49:48.728 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Content-Type-Options: nosniff
+24-01-28.20:49:48.728 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Strict-Transport-Security: max-age=31536000
+24-01-28.20:49:48.728 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Vary: Origin
+24-01-28.20:49:48.728 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - <-- END HTTP
+24-01-28.20:49:48.733 [http-nio-8090-exec-9] INFO  AbstractChatService    - 流式问答请求完成，使用模型：gpt-3.5-turbo
+24-01-28.20:56:26.615 [http-nio-8090-exec-1] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：gpt-3.5-turbo-16k 请求信息：[{"content":"你好？ 
+","role":"user"},{"content":"你好！欢迎来到ChatGPT。我是一个人工智能助手，可以回答你的问题和进行对话。有什么我可以帮助你的吗？","role":"system"},{"content":"给我写一个冒泡排序（Java实现）","role":"user"}]
+24-01-28.20:56:26.621 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - --> POST https://pro-share-aws-api.zcyai.com/v1/chat/completions
+24-01-28.20:56:26.621 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Content-Type: application/json; charset=utf-8
+24-01-28.20:56:26.621 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Content-Length: 403
+24-01-28.20:56:26.621 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Accept: text/event-stream
+24-01-28.20:56:26.622 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - --> END POST
+24-01-28.20:56:29.114 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - <-- 200 OK https://pro-share-aws-api.zcyai.com/v1/chat/completions?token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ4ZmciLCJleHAiOjE2OTAwMzI5MDQsImlhdCI6MTY5MDAyOTMwNCwianRpIjoiOTBkNzc5NjYtOWM5MS00MGVmLWJmNjktNzYzNDljNmUyMDkyIiwidXNlcm5hbWUiOiJ4ZmcifQ.x7P6Rc249SgbxpqWhgKahYP8A8AllNI_26DV08a1AZs (2492ms)
+24-01-28.20:56:29.114 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Content-Type: text/event-stream
+24-01-28.20:56:29.114 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Transfer-Encoding: chunked
+24-01-28.20:56:29.114 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Connection: keep-alive
+24-01-28.20:56:29.114 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Cache-Control: no-cache
+24-01-28.20:56:29.115 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Oneapi-Request-Id: 2024012820562792839930222SRxMhr
+24-01-28.20:56:29.115 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Date: Sun, 28 Jan 2024 12:56:28 GMT
+24-01-28.20:56:29.115 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Cache: Miss from cloudfront
+24-01-28.20:56:29.115 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Via: 1.1 a4079c0a5989b4b7af98433fdd07f680.cloudfront.net (CloudFront)
+24-01-28.20:56:29.115 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Amz-Cf-Pop: FRA56-P8
+24-01-28.20:56:29.115 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Alt-Svc: h3=":443"; ma=86400
+24-01-28.20:56:29.115 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Amz-Cf-Id: -hHO814pLsaxs9vAhuuOhPGqIt7U2BxVrsjcLD-nlSUb8W2RdspPWA==
+24-01-28.20:56:29.115 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-XSS-Protection: 1; mode=block
+24-01-28.20:56:29.115 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Frame-Options: SAMEORIGIN
+24-01-28.20:56:29.115 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Referrer-Policy: strict-origin-when-cross-origin
+24-01-28.20:56:29.115 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Content-Type-Options: nosniff
+24-01-28.20:56:29.115 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Strict-Transport-Security: max-age=31536000
+24-01-28.20:56:29.115 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Vary: Origin
+24-01-28.20:56:29.115 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - <-- END HTTP
+24-01-28.20:56:43.240 [http-nio-8090-exec-2] INFO  AbstractChatService    - 流式问答请求完成，使用模型：gpt-3.5-turbo-16k
+24-01-28.20:59:04.312 [http-nio-8090-exec-4] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：text-davinci-003 请求信息：[{"content":"给我写一个冒泡排序（Java实现）","role":"user"},{"content":"当然可以！以下是一个使用Java实现的冒泡排序算法：\n\n```java\npublic class BubbleSort {\n    public static void main(String[] args) {\n        int[] arr = {5, 2, 8, 12, 1, 6, 3};\n        bubbleSort(arr);\n        System.out.println(\"排序后的数组：\");\n        for (int num : arr) {\n            System.out.print(num + \" \");\n        }\n    }\n\n    public static void bubbleSort(int[] arr) {\n        int n = arr.length;\n        for (int i = 0; i < n - 1; i++) {\n            for (int j = 0; j < n - i - 1; j++) {\n                if (arr[j] > arr[j + 1]) {\n                    // 交换arr[j]和arr[j+1]\n                    int temp = arr[j];\n                    arr[j] = arr[j + 1];\n                    arr[j + 1] = temp;\n                }\n            }\n        }\n    }\n}\n```\n\n这段代码定义了一个`BubbleSort`类，其中`main`方法用于测试冒泡排序算法。在`bubbleSort`方法中，使用两个嵌套的循环来比较相邻的元素，并根据需要交换它们的位置，直到整个数组排序完成。\n\n希望这可以帮助到你！如果你有任何其他问题，请随时问我。","role":"system"},{"content":"test","role":"user"}]
+24-01-28.20:59:04.320 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - --> POST https://pro-share-aws-api.zcyai.com/v1/chat/completions
+24-01-28.20:59:04.320 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Content-Type: application/json; charset=utf-8
+24-01-28.20:59:04.320 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Content-Length: 1412
+24-01-28.20:59:04.320 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Accept: text/event-stream
+24-01-28.20:59:04.320 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - --> END POST
+24-01-28.20:59:05.932 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - <-- 200 OK https://pro-share-aws-api.zcyai.com/v1/chat/completions?token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ4ZmciLCJleHAiOjE2OTAwMzI5MDQsImlhdCI6MTY5MDAyOTMwNCwianRpIjoiOTBkNzc5NjYtOWM5MS00MGVmLWJmNjktNzYzNDljNmUyMDkyIiwidXNlcm5hbWUiOiJ4ZmcifQ.x7P6Rc249SgbxpqWhgKahYP8A8AllNI_26DV08a1AZs (1611ms)
+24-01-28.20:59:05.932 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Content-Type: text/event-stream
+24-01-28.20:59:05.932 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Transfer-Encoding: chunked
+24-01-28.20:59:05.932 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Connection: keep-alive
+24-01-28.20:59:05.932 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Cache-Control: no-cache
+24-01-28.20:59:05.932 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Oneapi-Request-Id: 2024012820590464771638322CBP426
+24-01-28.20:59:05.932 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Date: Sun, 28 Jan 2024 12:59:05 GMT
+24-01-28.20:59:05.932 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Cache: Miss from cloudfront
+24-01-28.20:59:05.932 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Via: 1.1 a4079c0a5989b4b7af98433fdd07f680.cloudfront.net (CloudFront)
+24-01-28.20:59:05.932 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Amz-Cf-Pop: FRA56-P8
+24-01-28.20:59:05.932 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Alt-Svc: h3=":443"; ma=86400
+24-01-28.20:59:05.932 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Amz-Cf-Id: 49Cs4KJcq4MASrg6l-SEagIQEfaIJqNH2ZEQPzWZXTpIeq9w2t5Qkw==
+24-01-28.20:59:05.933 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-XSS-Protection: 1; mode=block
+24-01-28.20:59:05.933 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Frame-Options: SAMEORIGIN
+24-01-28.20:59:05.933 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Referrer-Policy: strict-origin-when-cross-origin
+24-01-28.20:59:05.933 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Content-Type-Options: nosniff
+24-01-28.20:59:05.933 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Strict-Transport-Security: max-age=31536000
+24-01-28.20:59:05.933 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Vary: Origin
+24-01-28.20:59:05.933 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - <-- END HTTP
+24-01-28.20:59:09.747 [http-nio-8090-exec-5] INFO  AbstractChatService    - 流式问答请求完成，使用模型：text-davinci-003
+24-01-28.20:59:14.819 [http-nio-8090-exec-6] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：text-davinci-003 请求信息：[{"content":"test","role":"user"}]
+24-01-28.20:59:14.826 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - --> POST https://pro-share-aws-api.zcyai.com/v1/chat/completions
+24-01-28.20:59:14.827 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Content-Type: application/json; charset=utf-8
+24-01-28.20:59:14.827 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Content-Length: 150
+24-01-28.20:59:14.827 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Accept: text/event-stream
+24-01-28.20:59:14.827 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - --> END POST
+24-01-28.20:59:15.972 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - <-- 200 OK https://pro-share-aws-api.zcyai.com/v1/chat/completions?token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ4ZmciLCJleHAiOjE2OTAwMzI5MDQsImlhdCI6MTY5MDAyOTMwNCwianRpIjoiOTBkNzc5NjYtOWM5MS00MGVmLWJmNjktNzYzNDljNmUyMDkyIiwidXNlcm5hbWUiOiJ4ZmcifQ.x7P6Rc249SgbxpqWhgKahYP8A8AllNI_26DV08a1AZs (1145ms)
+24-01-28.20:59:15.972 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Content-Type: text/event-stream
+24-01-28.20:59:15.973 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Transfer-Encoding: chunked
+24-01-28.20:59:15.973 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Connection: keep-alive
+24-01-28.20:59:15.973 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Cache-Control: no-cache
+24-01-28.20:59:15.973 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Oneapi-Request-Id: 20240128205915147959131Y4MGFuKK
+24-01-28.20:59:15.973 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Date: Sun, 28 Jan 2024 12:59:15 GMT
+24-01-28.20:59:15.973 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Cache: Miss from cloudfront
+24-01-28.20:59:15.973 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Via: 1.1 a4079c0a5989b4b7af98433fdd07f680.cloudfront.net (CloudFront)
+24-01-28.20:59:15.973 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Amz-Cf-Pop: FRA56-P8
+24-01-28.20:59:15.973 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Alt-Svc: h3=":443"; ma=86400
+24-01-28.20:59:15.973 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Amz-Cf-Id: 3Me3occplMEaQ2jPf1YnlbeyldRPLdg0pgkskF2qoQbcdF1wj4X04Q==
+24-01-28.20:59:15.973 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-XSS-Protection: 1; mode=block
+24-01-28.20:59:15.973 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Frame-Options: SAMEORIGIN
+24-01-28.20:59:15.973 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Referrer-Policy: strict-origin-when-cross-origin
+24-01-28.20:59:15.973 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Content-Type-Options: nosniff
+24-01-28.20:59:15.973 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Strict-Transport-Security: max-age=31536000
+24-01-28.20:59:15.973 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Vary: Origin
+24-01-28.20:59:15.974 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - <-- END HTTP
+24-01-28.20:59:16.283 [http-nio-8090-exec-7] INFO  AbstractChatService    - 流式问答请求完成，使用模型：text-davinci-003

@@ -1,0 +1,1564 @@
+24-01-27.13:34:10.565 [main            ] INFO  Application            - Starting Application using Java 1.8.0_201 on Rayce with PID 8809 (/home/rayce/Udatabase/study/Gpt_Item/PlanetItemGpt-data/chatgpt-data-app/target/classes started by rayce in /home/rayce/Udatabase/study/Gpt_Item/PlanetItemGpt-data)
+24-01-27.13:34:10.566 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-01-27.13:34:11.133 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8090 (http)
+24-01-27.13:34:11.138 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+24-01-27.13:34:11.138 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-01-27.13:34:11.138 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-01-27.13:34:11.211 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-01-27.13:34:11.212 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 620 ms
+24-01-27.13:34:11.560 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
+24-01-27.13:34:11.569 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8090 (http) with context path ''
+24-01-27.13:34:11.575 [main            ] INFO  Application            - Started Application in 1.724 seconds (JVM running for 2.175)
+24-01-27.13:44:05.349 [http-nio-8090-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+24-01-27.13:44:05.349 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+24-01-27.13:44:05.349 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Completed initialization in 0 ms
+24-01-27.13:44:05.452 [http-nio-8090-exec-1] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：gpt-3.5-turbo 请求信息：[{"content":"写一个java冒泡排序","role":"user"}]
+24-01-27.13:44:05.476 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - --> POST https://pro-share-aws-api.zcyai.com/v1/chat/completions
+24-01-27.13:44:05.476 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Content-Type: application/json; charset=utf-8
+24-01-27.13:44:05.476 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Content-Length: 171
+24-01-27.13:44:05.476 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - apiKey: sk-dS9kPBZCiUXEN9jh133c8f44A5984dAc8f1350E18c716aDb
+24-01-27.13:44:05.476 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Accept: text/event-stream
+24-01-27.13:44:05.476 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - 
+24-01-27.13:44:05.476 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - {"model":"gpt-3.5-turbo","messages":[{"role":"user","content":"写一个java冒泡排序"}],"temperature":0.0,"stream":true,"frequency_penalty":0.0,"presence_penalty":0.0}
+24-01-27.13:44:05.477 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - --> END POST (171-byte body)
+24-01-27.13:44:08.142 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - <-- 200 OK https://pro-share-aws-api.zcyai.com/v1/chat/completions (2665ms)
+24-01-27.13:44:08.143 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Content-Type: text/event-stream
+24-01-27.13:44:08.143 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Transfer-Encoding: chunked
+24-01-27.13:44:08.143 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Connection: keep-alive
+24-01-27.13:44:08.143 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Cache-Control: no-cache
+24-01-27.13:44:08.143 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Oneapi-Request-Id: 20240127134406961616525EpmhxvXA
+24-01-27.13:44:08.143 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Date: Sat, 27 Jan 2024 05:44:07 GMT
+24-01-27.13:44:08.143 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Cache: Miss from cloudfront
+24-01-27.13:44:08.143 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Via: 1.1 a530f843a2269d63579bc4238b63fbac.cloudfront.net (CloudFront)
+24-01-27.13:44:08.143 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Amz-Cf-Pop: FRA56-P8
+24-01-27.13:44:08.143 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Alt-Svc: h3=":443"; ma=86400
+24-01-27.13:44:08.143 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Amz-Cf-Id: GMysevpclrgBx2onX9gvFyK_6Kf_bI7-qbbSCPh_WYoCWJLasjrOgA==
+24-01-27.13:44:08.143 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-XSS-Protection: 1; mode=block
+24-01-27.13:44:08.143 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Frame-Options: SAMEORIGIN
+24-01-27.13:44:08.143 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Referrer-Policy: strict-origin-when-cross-origin
+24-01-27.13:44:08.143 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Content-Type-Options: nosniff
+24-01-27.13:44:08.143 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Strict-Transport-Security: max-age=31536000
+24-01-27.13:44:08.143 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Vary: Origin
+24-01-27.13:44:19.016 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - 
+24-01-27.13:44:19.017 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"role":"assistant","content":""},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"以下"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"是"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"一个"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"使用"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"Java"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"编"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"写"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"的"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"冒"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"泡"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"排序"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"算"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"法"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"：\n\n"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"```"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"java"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"\n"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"public"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" class"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" Bubble"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"Sort"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" {\n"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"   "},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" public"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" static"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" void"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" main"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"(String"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"[]"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" args"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":")"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" {\n"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"       "},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" int"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"[]"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" arr"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" ="},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" {"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"5"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":","},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" "},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"2"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":","},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" "},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"8"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":","},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" "},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"1"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":","},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" "},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"3"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"};\n"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"       "},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" bubble"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"Sort"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"(arr"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":");\n"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"       "},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" System"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":".out"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":".println"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"(\""},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"排序"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"后"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"的"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"数组"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"："},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"\");\n"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"       "},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" for"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" ("},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"int"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" num"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" :"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" arr"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":")"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" {\n"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"           "},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" System"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":".out"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":".print"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"(num"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" +"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" \""},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" \");\n"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"       "},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" }\n"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"   "},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" }\n\n"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"   "},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" public"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" static"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" void"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" bubble"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"Sort"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"(int"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"[]"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" arr"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":")"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" {\n"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"       "},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" int"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" n"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" ="},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" arr"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":".length"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":";\n"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"       "},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" for"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" ("},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"int"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" i"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" ="},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" "},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"0"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":";"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" i"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" <"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" n"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" -"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" "},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"1"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":";"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" i"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"++)"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" {\n"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"           "},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" for"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" ("},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"int"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" j"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" ="},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" "},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"0"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":";"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" j"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" <"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" n"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" -"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" i"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" -"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" "},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"1"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":";"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" j"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"++)"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" {\n"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"               "},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" if"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" ("},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"arr"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"[j"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"]"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" >"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" arr"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"[j"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" +"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" "},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"1"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"])"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" {\n"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"                   "},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" //"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" "},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"交"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"换"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"arr"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"[j"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"]"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"和"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"arr"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"[j"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"+"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"1"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"]\n"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"                   "},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" int"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" temp"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" ="},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" arr"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"[j"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"];\n"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"                   "},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" arr"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"[j"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"]"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" ="},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" arr"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"[j"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" +"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" "},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"1"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"];\n"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"                   "},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" arr"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"[j"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" +"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" "},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"1"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"]"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" ="},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" temp"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":";\n"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"               "},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" }\n"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"           "},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" }\n"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"       "},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" }\n"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"   "},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" }\n"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"}\n"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"``"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"`\n\n"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"输出"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"结果"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"为"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"：\n\n"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"``"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"`\n"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"排序"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"后"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"的"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"数组"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"：\n"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"1"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" "},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"2"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" "},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"3"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" "},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"5"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":" "},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"8"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"\n"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"``"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"`\n\n"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"以上"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"代码"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"使用"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"了"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"嵌"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"套"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"的"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"循"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"环"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"来"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"实"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"现"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"冒"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"泡"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"排序"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"。"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"外"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"层"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"循"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"环"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"控"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"制"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"需要"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"比"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"较"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"的"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"轮"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"数"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"，"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"内"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"层"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"循"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"环"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"用"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"于"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"比"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"较"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"相"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"邻"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"元"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"素"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"并"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"进行"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"交"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"换"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"。"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"每"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"一"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"轮"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"循"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"环"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"都"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"会"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"将"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"当前"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"未"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"排序"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"部"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"分"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"的"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"最"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"大"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"元"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"素"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"移"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"动"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"到"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"末"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"尾"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"。"},"logprobs":null,"finish_reason":null}]}
+
+data: {"id":"chatcmpl-8lVm3m2A8DI6c8KVJYCJCWxv8WObF","object":"chat.completion.chunk","created":1706334247,"model":"gpt-3.5-turbo-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{},"logprobs":null,"finish_reason":"stop"}]}
+
+data: [DONE]
+
+
+24-01-27.13:44:19.018 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - <-- END HTTP (77760-byte body)
+24-01-27.13:44:19.080 [http-nio-8090-exec-2] INFO  AbstractChatService    - 流式问答请求完成，使用模型：gpt-3.5-turbo
+24-01-27.13:54:37.406 [main            ] INFO  Application            - Starting Application using Java 1.8.0_201 on Rayce with PID 10140 (/home/rayce/Udatabase/study/Gpt_Item/PlanetItemGpt-data/chatgpt-data-app/target/classes started by rayce in /home/rayce/Udatabase/study/Gpt_Item/PlanetItemGpt-data)
+24-01-27.13:54:37.408 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-01-27.13:54:37.900 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8090 (http)
+24-01-27.13:54:37.904 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+24-01-27.13:54:37.905 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-01-27.13:54:37.905 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-01-27.13:54:37.962 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-01-27.13:54:37.963 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 530 ms
+24-01-27.13:54:38.292 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
+24-01-27.13:54:38.299 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8090 (http) with context path ''
+24-01-27.13:54:38.305 [main            ] INFO  Application            - Started Application in 1.238 seconds (JVM running for 1.506)
+24-01-27.13:54:41.752 [http-nio-8090-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+24-01-27.13:54:41.752 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+24-01-27.13:54:41.752 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Completed initialization in 0 ms
+24-01-27.13:54:41.838 [http-nio-8090-exec-1] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：gpt-3.5-turbo 请求信息：[{"content":"写一个java冒泡排序","role":"user"}]
+24-01-27.13:54:41.859 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - --> POST https://pro-share-aws-api.zcyai.com/v1/chat/completions
+24-01-27.13:54:41.859 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Content-Type: application/json; charset=utf-8
+24-01-27.13:54:41.859 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Content-Length: 171
+24-01-27.13:54:41.859 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Accept: text/event-stream
+24-01-27.13:54:41.859 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - --> END POST
+24-01-27.13:54:44.783 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - <-- 200 OK https://pro-share-aws-api.zcyai.com/v1/chat/completions?token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ4ZmciLCJleHAiOjE2OTAwMzI5MDQsImlhdCI6MTY5MDAyOTMwNCwianRpIjoiOTBkNzc5NjYtOWM5MS00MGVmLWJmNjktNzYzNDljNmUyMDkyIiwidXNlcm5hbWUiOiJ4ZmcifQ.x7P6Rc249SgbxpqWhgKahYP8A8AllNI_26DV08a1AZs (2924ms)
+24-01-27.13:54:44.784 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Content-Type: text/event-stream
+24-01-27.13:54:44.784 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Transfer-Encoding: chunked
+24-01-27.13:54:44.784 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Connection: keep-alive
+24-01-27.13:54:44.784 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Cache-Control: no-cache
+24-01-27.13:54:44.784 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Oneapi-Request-Id: 20240127135443254302215TUOZtuYb
+24-01-27.13:54:44.784 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Date: Sat, 27 Jan 2024 05:54:44 GMT
+24-01-27.13:54:44.784 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Cache: Miss from cloudfront
+24-01-27.13:54:44.785 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Via: 1.1 67cd7fbfa7b3b35b6217719b3f0167d2.cloudfront.net (CloudFront)
+24-01-27.13:54:44.785 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Amz-Cf-Pop: FRA56-P8
+24-01-27.13:54:44.785 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Alt-Svc: h3=":443"; ma=86400
+24-01-27.13:54:44.785 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Amz-Cf-Id: KlY8Ou4-5hYZtX96WzsIhFy4bcC0cidmsfRAn2HR577lpNoDgRc61w==
+24-01-27.13:54:44.785 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-XSS-Protection: 1; mode=block
+24-01-27.13:54:44.785 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Frame-Options: SAMEORIGIN
+24-01-27.13:54:44.785 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Referrer-Policy: strict-origin-when-cross-origin
+24-01-27.13:54:44.785 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Content-Type-Options: nosniff
+24-01-27.13:54:44.785 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Strict-Transport-Security: max-age=31536000
+24-01-27.13:54:44.785 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Vary: Origin
+24-01-27.13:54:44.785 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - <-- END HTTP
+24-01-27.13:54:53.177 [http-nio-8090-exec-2] INFO  AbstractChatService    - 流式问答请求完成，使用模型：gpt-3.5-turbo
+24-01-27.16:14:24.857 [main            ] INFO  Application            - Starting Application using Java 1.8.0_201 on Rayce with PID 15382 (/home/rayce/Udatabase/study/Gpt_Item/PlanetItemGpt-data/chatgpt-data-app/target/classes started by rayce in /home/rayce/Udatabase/study/Gpt_Item/PlanetItemGpt-data)
+24-01-27.16:14:24.860 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-01-27.16:14:25.278 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'openAiSession' defined in class path resource [cn/rayce/config/glmConfig/ChatGLMSDKConfig.class]: Cannot register bean definition [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=chatGLMSDKConfig; factoryMethodName=openAiSession; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [cn/rayce/config/glmConfig/ChatGLMSDKConfig.class]] for bean 'openAiSession': There is already [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=chatGPTSDKConfig; factoryMethodName=openAiSession; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [cn/rayce/config/ChatGPTSDKConfig.class]] bound.
+24-01-27.16:14:25.288 [main            ] INFO  ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+24-01-27.16:14:25.299 [main            ] ERROR LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'openAiSession', defined in class path resource [cn/rayce/config/glmConfig/ChatGLMSDKConfig.class], could not be registered. A bean with that name has already been defined in class path resource [cn/rayce/config/ChatGPTSDKConfig.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+24-01-27.16:15:59.896 [main            ] INFO  Application            - Starting Application using Java 1.8.0_201 on Rayce with PID 15548 (/home/rayce/Udatabase/study/Gpt_Item/PlanetItemGpt-data/chatgpt-data-app/target/classes started by rayce in /home/rayce/Udatabase/study/Gpt_Item/PlanetItemGpt-data)
+24-01-27.16:15:59.898 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-01-27.16:16:00.271 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'openAiSession' defined in class path resource [cn/rayce/config/glmConfig/ChatGLMSDKConfig.class]: Cannot register bean definition [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=chatGLMSDKConfig; factoryMethodName=openAiSession; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [cn/rayce/config/glmConfig/ChatGLMSDKConfig.class]] for bean 'openAiSession': There is already [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=chatGPTSDKConfig; factoryMethodName=openAiSession; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [cn/rayce/config/ChatGPTSDKConfig.class]] bound.
+24-01-27.16:16:00.278 [main            ] INFO  ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+24-01-27.16:16:00.289 [main            ] ERROR LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'openAiSession', defined in class path resource [cn/rayce/config/glmConfig/ChatGLMSDKConfig.class], could not be registered. A bean with that name has already been defined in class path resource [cn/rayce/config/ChatGPTSDKConfig.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+24-01-27.16:19:33.864 [main            ] INFO  Application            - Starting Application using Java 1.8.0_201 on Rayce with PID 16434 (/home/rayce/Udatabase/study/Gpt_Item/PlanetItemGpt-data/chatgpt-data-app/target/classes started by rayce in /home/rayce/Udatabase/study/Gpt_Item/PlanetItemGpt-data)
+24-01-27.16:19:33.867 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-01-27.16:19:34.262 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'openAiSession' defined in class path resource [cn/rayce/config/glmConfig/ChatGLMSDKConfig.class]: Cannot register bean definition [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=chatGLMSDKConfig; factoryMethodName=openAiSession; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [cn/rayce/config/glmConfig/ChatGLMSDKConfig.class]] for bean 'openAiSession': There is already [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=chatGPTSDKConfig; factoryMethodName=openAiSession; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [cn/rayce/config/ChatGPTSDKConfig.class]] bound.
+24-01-27.16:19:34.270 [main            ] INFO  ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+24-01-27.16:19:34.281 [main            ] ERROR LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'openAiSession', defined in class path resource [cn/rayce/config/glmConfig/ChatGLMSDKConfig.class], could not be registered. A bean with that name has already been defined in class path resource [cn/rayce/config/ChatGPTSDKConfig.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+24-01-27.16:19:52.700 [main            ] INFO  Application            - Starting Application using Java 1.8.0_201 on Rayce with PID 16534 (/home/rayce/Udatabase/study/Gpt_Item/PlanetItemGpt-data/chatgpt-data-app/target/classes started by rayce in /home/rayce/Udatabase/study/Gpt_Item/PlanetItemGpt-data)
+24-01-27.16:19:52.702 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-01-27.16:19:53.060 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'openAiSession' defined in class path resource [cn/rayce/config/glmConfig/ChatGLMSDKConfig.class]: Cannot register bean definition [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=chatGLMSDKConfig; factoryMethodName=openAiSession; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [cn/rayce/config/glmConfig/ChatGLMSDKConfig.class]] for bean 'openAiSession': There is already [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=chatGPTSDKConfig; factoryMethodName=openAiSession; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [cn/rayce/config/ChatGPTSDKConfig.class]] bound.
+24-01-27.16:19:53.067 [main            ] INFO  ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+24-01-27.16:19:53.079 [main            ] ERROR LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'openAiSession', defined in class path resource [cn/rayce/config/glmConfig/ChatGLMSDKConfig.class], could not be registered. A bean with that name has already been defined in class path resource [cn/rayce/config/ChatGPTSDKConfig.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+24-01-27.16:20:04.947 [main            ] ERROR LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'spring.main' to org.springframework.boot.SpringApplication:
+
+    Property: spring.main
+    Value: "allow-bean-definition-overriding=true"
+    Origin: class path resource [application.yml] - 7:5
+    Reason: org.springframework.core.convert.ConverterNotFoundException: No converter found capable of converting from type [java.lang.String] to type [org.springframework.boot.SpringApplication]
+
+Action:
+
+Update your application's configuration
+
+24-01-27.16:20:36.150 [main            ] ERROR LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'spring.main' to org.springframework.boot.SpringApplication:
+
+    Property: spring.main
+    Value: "allow-bean-definition-overriding=true"
+    Origin: class path resource [application.yml] - 7:5
+    Reason: org.springframework.core.convert.ConverterNotFoundException: No converter found capable of converting from type [java.lang.String] to type [org.springframework.boot.SpringApplication]
+
+Action:
+
+Update your application's configuration
+
+24-01-27.16:21:13.472 [main            ] INFO  Application            - Starting Application using Java 1.8.0_201 on Rayce with PID 16921 (/home/rayce/Udatabase/study/Gpt_Item/PlanetItemGpt-data/chatgpt-data-app/target/classes started by rayce in /home/rayce/Udatabase/study/Gpt_Item/PlanetItemGpt-data)
+24-01-27.16:21:13.475 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-01-27.16:21:14.211 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8090 (http)
+24-01-27.16:21:14.219 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+24-01-27.16:21:14.219 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-01-27.16:21:14.219 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-01-27.16:21:14.308 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-01-27.16:21:14.308 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 795 ms
+24-01-27.16:21:14.515 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'chatGPTAIServiceController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'chatService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanNotOfRequiredTypeException: Bean named 'openAiSession' is expected to be of type 'cn.rayce.session.OpenAiSession' but was actually of type 'cn.bugstack.chatglm.session.defaults.DefaultOpenAiSession'
+24-01-27.16:21:14.517 [main            ] INFO  StandardService        - Stopping service [Tomcat]
+24-01-27.16:21:14.529 [main            ] INFO  ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+24-01-27.16:21:14.545 [main            ] ERROR SpringApplication      - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'chatGPTAIServiceController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'chatService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanNotOfRequiredTypeException: Bean named 'openAiSession' is expected to be of type 'cn.rayce.session.OpenAiSession' but was actually of type 'cn.bugstack.chatglm.session.defaults.DefaultOpenAiSession'
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:332)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:920)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at cn.rayce.Application.main(Application.java:14)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'chatService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanNotOfRequiredTypeException: Bean named 'openAiSession' is expected to be of type 'cn.rayce.session.OpenAiSession' but was actually of type 'cn.bugstack.chatglm.session.defaults.DefaultOpenAiSession'
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:332)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeanByName(AbstractAutowireCapableBeanFactory.java:479)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:550)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:520)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:673)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:329)
+	... 17 common frames omitted
+Caused by: org.springframework.beans.factory.BeanNotOfRequiredTypeException: Bean named 'openAiSession' is expected to be of type 'cn.rayce.session.OpenAiSession' but was actually of type 'cn.bugstack.chatglm.session.defaults.DefaultOpenAiSession'
+	at org.springframework.beans.factory.support.AbstractBeanFactory.adaptBeanInstance(AbstractBeanFactory.java:417)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:398)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeanByName(AbstractAutowireCapableBeanFactory.java:479)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:550)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:520)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:673)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:329)
+	... 31 common frames omitted
+24-01-27.16:21:37.851 [main            ] INFO  Application            - Starting Application using Java 1.8.0_201 on Rayce with PID 17051 (/home/rayce/Udatabase/study/Gpt_Item/PlanetItemGpt-data/chatgpt-data-app/target/classes started by rayce in /home/rayce/Udatabase/study/Gpt_Item/PlanetItemGpt-data)
+24-01-27.16:21:37.853 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-01-27.16:21:38.248 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'openAiSession' defined in class path resource [cn/rayce/config/glmConfig/ChatGLMSDKConfig.class]: Cannot register bean definition [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=chatGLMSDKConfig; factoryMethodName=openAiSession; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [cn/rayce/config/glmConfig/ChatGLMSDKConfig.class]] for bean 'openAiSession': There is already [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=chatGPTSDKConfig; factoryMethodName=openAiSession; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [cn/rayce/config/ChatGPTSDKConfig.class]] bound.
+24-01-27.16:21:38.256 [main            ] INFO  ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+24-01-27.16:21:38.267 [main            ] ERROR LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'openAiSession', defined in class path resource [cn/rayce/config/glmConfig/ChatGLMSDKConfig.class], could not be registered. A bean with that name has already been defined in class path resource [cn/rayce/config/ChatGPTSDKConfig.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+24-01-27.16:22:00.120 [main            ] INFO  Application            - Starting Application using Java 1.8.0_201 on Rayce with PID 17196 (/home/rayce/Udatabase/study/Gpt_Item/PlanetItemGpt-data/chatgpt-data-app/target/classes started by rayce in /home/rayce/Udatabase/study/Gpt_Item/PlanetItemGpt-data)
+24-01-27.16:22:00.123 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-01-27.16:22:01.189 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8090 (http)
+24-01-27.16:22:01.200 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+24-01-27.16:22:01.201 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-01-27.16:22:01.201 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-01-27.16:22:01.343 [main            ] INFO  Application            - Starting Application using Java 1.8.0_201 on Rayce with PID 17267 (/home/rayce/Udatabase/study/Gpt_Item/PlanetItemGpt-data/chatgpt-data-app/target/classes started by rayce in /home/rayce/Udatabase/study/Gpt_Item/PlanetItemGpt-data)
+24-01-27.16:22:01.348 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-01-27.16:22:01.338 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-01-27.16:22:01.350 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1178 ms
+24-01-27.16:22:01.680 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'chatGPTAIServiceController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'chatService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanNotOfRequiredTypeException: Bean named 'openAiSession' is expected to be of type 'cn.rayce.session.OpenAiSession' but was actually of type 'cn.bugstack.chatglm.session.defaults.DefaultOpenAiSession'
+24-01-27.16:22:01.683 [main            ] INFO  StandardService        - Stopping service [Tomcat]
+24-01-27.16:22:01.698 [main            ] INFO  ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+24-01-27.16:22:01.720 [main            ] ERROR SpringApplication      - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'chatGPTAIServiceController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'chatService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanNotOfRequiredTypeException: Bean named 'openAiSession' is expected to be of type 'cn.rayce.session.OpenAiSession' but was actually of type 'cn.bugstack.chatglm.session.defaults.DefaultOpenAiSession'
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:332)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:920)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at cn.rayce.Application.main(Application.java:14)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'chatService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanNotOfRequiredTypeException: Bean named 'openAiSession' is expected to be of type 'cn.rayce.session.OpenAiSession' but was actually of type 'cn.bugstack.chatglm.session.defaults.DefaultOpenAiSession'
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:332)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeanByName(AbstractAutowireCapableBeanFactory.java:479)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:550)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:520)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:673)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:329)
+	... 17 common frames omitted
+Caused by: org.springframework.beans.factory.BeanNotOfRequiredTypeException: Bean named 'openAiSession' is expected to be of type 'cn.rayce.session.OpenAiSession' but was actually of type 'cn.bugstack.chatglm.session.defaults.DefaultOpenAiSession'
+	at org.springframework.beans.factory.support.AbstractBeanFactory.adaptBeanInstance(AbstractBeanFactory.java:417)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:398)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeanByName(AbstractAutowireCapableBeanFactory.java:479)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:550)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:520)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:673)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:329)
+	... 31 common frames omitted
+24-01-27.16:22:02.169 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8090 (http)
+24-01-27.16:22:02.175 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+24-01-27.16:22:02.176 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-01-27.16:22:02.176 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-01-27.16:22:02.261 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-01-27.16:22:02.262 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 863 ms
+24-01-27.16:22:02.504 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'chatGPTAIServiceController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'chatService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanNotOfRequiredTypeException: Bean named 'openAiSession' is expected to be of type 'cn.rayce.session.OpenAiSession' but was actually of type 'cn.bugstack.chatglm.session.defaults.DefaultOpenAiSession'
+24-01-27.16:22:02.506 [main            ] INFO  StandardService        - Stopping service [Tomcat]
+24-01-27.16:22:02.516 [main            ] INFO  ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+24-01-27.16:22:02.534 [main            ] ERROR SpringApplication      - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'chatGPTAIServiceController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'chatService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanNotOfRequiredTypeException: Bean named 'openAiSession' is expected to be of type 'cn.rayce.session.OpenAiSession' but was actually of type 'cn.bugstack.chatglm.session.defaults.DefaultOpenAiSession'
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:332)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:920)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at cn.rayce.Application.main(Application.java:14)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'chatService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanNotOfRequiredTypeException: Bean named 'openAiSession' is expected to be of type 'cn.rayce.session.OpenAiSession' but was actually of type 'cn.bugstack.chatglm.session.defaults.DefaultOpenAiSession'
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:332)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeanByName(AbstractAutowireCapableBeanFactory.java:479)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:550)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:520)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:673)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:329)
+	... 17 common frames omitted
+Caused by: org.springframework.beans.factory.BeanNotOfRequiredTypeException: Bean named 'openAiSession' is expected to be of type 'cn.rayce.session.OpenAiSession' but was actually of type 'cn.bugstack.chatglm.session.defaults.DefaultOpenAiSession'
+	at org.springframework.beans.factory.support.AbstractBeanFactory.adaptBeanInstance(AbstractBeanFactory.java:417)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:398)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeanByName(AbstractAutowireCapableBeanFactory.java:479)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:550)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:520)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:673)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:329)
+	... 31 common frames omitted
+24-01-27.16:22:49.382 [main            ] INFO  Application            - Starting Application using Java 1.8.0_201 on Rayce with PID 17428 (/home/rayce/Udatabase/study/Gpt_Item/PlanetItemGpt-data/chatgpt-data-app/target/classes started by rayce in /home/rayce/Udatabase/study/Gpt_Item/PlanetItemGpt-data)
+24-01-27.16:22:49.385 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-01-27.16:22:49.771 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'openAiSession' defined in class path resource [cn/rayce/config/glmConfig/ChatGLMSDKConfig.class]: Cannot register bean definition [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=chatGLMSDKConfig; factoryMethodName=openAiSession; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [cn/rayce/config/glmConfig/ChatGLMSDKConfig.class]] for bean 'openAiSession': There is already [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=chatGPTSDKConfig; factoryMethodName=openAiSession; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [cn/rayce/config/ChatGPTSDKConfig.class]] bound.
+24-01-27.16:22:49.779 [main            ] INFO  ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+24-01-27.16:22:49.791 [main            ] ERROR LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'openAiSession', defined in class path resource [cn/rayce/config/glmConfig/ChatGLMSDKConfig.class], could not be registered. A bean with that name has already been defined in class path resource [cn/rayce/config/ChatGPTSDKConfig.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+24-01-27.16:23:42.224 [main            ] INFO  Application            - Starting Application using Java 1.8.0_201 on Rayce with PID 17567 (/home/rayce/Udatabase/study/Gpt_Item/PlanetItemGpt-data/chatgpt-data-app/target/classes started by rayce in /home/rayce/Udatabase/study/Gpt_Item/PlanetItemGpt-data)
+24-01-27.16:23:42.227 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-01-27.16:23:43.028 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8090 (http)
+24-01-27.16:23:43.035 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+24-01-27.16:23:43.035 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-01-27.16:23:43.035 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-01-27.16:23:43.120 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-01-27.16:23:43.121 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 849 ms
+24-01-27.16:23:43.338 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'chatGLMAIServiceController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'cn.bugstack.chatglm.session.OpenAiSession' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+24-01-27.16:23:43.341 [main            ] INFO  StandardService        - Stopping service [Tomcat]
+24-01-27.16:23:43.350 [main            ] INFO  ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+24-01-27.16:23:43.366 [main            ] ERROR LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'cn.bugstack.chatglm.session.OpenAiSession' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'cn.bugstack.chatglm.session.OpenAiSession' in your configuration.
+
+24-01-27.16:24:20.177 [main            ] INFO  Application            - Starting Application using Java 1.8.0_201 on Rayce with PID 17737 (/home/rayce/Udatabase/study/Gpt_Item/PlanetItemGpt-data/chatgpt-data-app/target/classes started by rayce in /home/rayce/Udatabase/study/Gpt_Item/PlanetItemGpt-data)
+24-01-27.16:24:20.179 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-01-27.16:24:20.958 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8090 (http)
+24-01-27.16:24:20.966 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+24-01-27.16:24:20.967 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-01-27.16:24:20.967 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-01-27.16:24:21.062 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-01-27.16:24:21.063 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 844 ms
+24-01-27.16:24:21.286 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'chatGLMAIServiceController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'cn.bugstack.chatglm.session.OpenAiSession' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+24-01-27.16:24:21.289 [main            ] INFO  StandardService        - Stopping service [Tomcat]
+24-01-27.16:24:21.298 [main            ] INFO  ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+24-01-27.16:24:21.314 [main            ] ERROR LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'cn.bugstack.chatglm.session.OpenAiSession' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'cn.bugstack.chatglm.session.OpenAiSession' in your configuration.
+
+24-01-27.16:24:41.040 [main            ] INFO  Application            - Starting Application using Java 1.8.0_201 on Rayce with PID 17868 (/home/rayce/Udatabase/study/Gpt_Item/PlanetItemGpt-data/chatgpt-data-app/target/classes started by rayce in /home/rayce/Udatabase/study/Gpt_Item/PlanetItemGpt-data)
+24-01-27.16:24:41.043 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-01-27.16:24:41.820 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8090 (http)
+24-01-27.16:24:41.827 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+24-01-27.16:24:41.828 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-01-27.16:24:41.828 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-01-27.16:24:41.915 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-01-27.16:24:41.916 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 801 ms
+24-01-27.16:24:42.413 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
+24-01-27.16:24:42.422 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8090 (http) with context path ''
+24-01-27.16:24:42.430 [main            ] INFO  Application            - Started Application in 1.843 seconds (JVM running for 2.203)
+24-01-27.16:24:48.663 [http-nio-8090-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+24-01-27.16:24:48.663 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+24-01-27.16:24:48.664 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Completed initialization in 0 ms
+24-01-27.16:24:48.806 [http-nio-8090-exec-1] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：gpt-3.5-turbo 请求信息：[{"content":"写一个java冒泡排序","role":"user"}]
+24-01-27.16:24:48.837 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - --> POST https://pro-share-aws-api.zcyai.com/v1/chat/completions
+24-01-27.16:24:48.837 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Content-Type: application/json; charset=utf-8
+24-01-27.16:24:48.837 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Content-Length: 171
+24-01-27.16:24:48.837 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Accept: text/event-stream
+24-01-27.16:24:48.837 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - --> END POST
+24-01-27.16:24:51.968 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - <-- 200 OK https://pro-share-aws-api.zcyai.com/v1/chat/completions?token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ4ZmciLCJleHAiOjE2OTAwMzI5MDQsImlhdCI6MTY5MDAyOTMwNCwianRpIjoiOTBkNzc5NjYtOWM5MS00MGVmLWJmNjktNzYzNDljNmUyMDkyIiwidXNlcm5hbWUiOiJ4ZmcifQ.x7P6Rc249SgbxpqWhgKahYP8A8AllNI_26DV08a1AZs (3130ms)
+24-01-27.16:24:51.968 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Content-Type: text/event-stream
+24-01-27.16:24:51.968 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Transfer-Encoding: chunked
+24-01-27.16:24:51.968 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Connection: keep-alive
+24-01-27.16:24:51.968 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Cache-Control: no-cache
+24-01-27.16:24:51.968 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Oneapi-Request-Id: 20240127162450224796763eUFW7kyC
+24-01-27.16:24:51.968 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Date: Sat, 27 Jan 2024 08:24:51 GMT
+24-01-27.16:24:51.968 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Cache: Miss from cloudfront
+24-01-27.16:24:51.968 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Via: 1.1 64c8688da1fd73389eb91af90ae83792.cloudfront.net (CloudFront)
+24-01-27.16:24:51.968 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Amz-Cf-Pop: FRA56-P8
+24-01-27.16:24:51.969 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Alt-Svc: h3=":443"; ma=86400
+24-01-27.16:24:51.969 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Amz-Cf-Id: _0cTv1wdh-q7_LVPjNBwFIk3ySvEwA0JCZg19dJLUYh1kWYx-Pi4NQ==
+24-01-27.16:24:51.969 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-XSS-Protection: 1; mode=block
+24-01-27.16:24:51.969 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Frame-Options: SAMEORIGIN
+24-01-27.16:24:51.969 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Referrer-Policy: strict-origin-when-cross-origin
+24-01-27.16:24:51.969 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Content-Type-Options: nosniff
+24-01-27.16:24:51.969 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Strict-Transport-Security: max-age=31536000
+24-01-27.16:24:51.969 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Vary: Origin
+24-01-27.16:24:51.969 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - <-- END HTTP
+24-01-27.16:25:00.681 [http-nio-8090-exec-2] INFO  AbstractChatService    - 流式问答请求完成，使用模型：gpt-3.5-turbo
+24-01-27.17:27:48.828 [main            ] INFO  Application            - Starting Application using Java 1.8.0_201 on Rayce with PID 20983 (/home/rayce/Udatabase/study/Gpt_Item/PlanetItemGpt-data/chatgpt-data-app/target/classes started by rayce in /home/rayce/Udatabase/study/Gpt_Item/PlanetItemGpt-data)
+24-01-27.17:27:48.829 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-01-27.17:27:49.307 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8090 (http)
+24-01-27.17:27:49.312 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+24-01-27.17:27:49.313 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-01-27.17:27:49.313 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-01-27.17:27:49.369 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-01-27.17:27:49.369 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 515 ms
+24-01-27.17:27:49.722 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
+24-01-27.17:27:49.729 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8090 (http) with context path ''
+24-01-27.17:27:49.735 [main            ] INFO  Application            - Started Application in 1.238 seconds (JVM running for 1.57)
+24-01-27.17:28:19.598 [main            ] INFO  Application            - Starting Application using Java 1.8.0_201 on Rayce with PID 21158 (/home/rayce/Udatabase/study/Gpt_Item/PlanetItemGpt-data/chatgpt-data-app/target/classes started by rayce in /home/rayce/Udatabase/study/Gpt_Item/PlanetItemGpt-data)
+24-01-27.17:28:19.600 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-01-27.17:28:20.081 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8090 (http)
+24-01-27.17:28:20.086 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+24-01-27.17:28:20.086 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-01-27.17:28:20.087 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-01-27.17:28:20.148 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-01-27.17:28:20.149 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 518 ms
+24-01-27.17:28:20.488 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
+24-01-27.17:28:20.495 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8090 (http) with context path ''
+24-01-27.17:28:20.501 [main            ] INFO  Application            - Started Application in 1.247 seconds (JVM running for 1.601)
+24-01-27.17:29:41.275 [http-nio-8090-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+24-01-27.17:29:41.276 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+24-01-27.17:29:41.276 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Completed initialization in 0 ms
+24-01-27.17:29:41.550 [http-nio-8090-exec-2] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：gpt-3.5-turbo 请求信息：[{"content":"请问有什么需要帮助的吗？","role":"system"},{"content":"test","role":"user"}]
+24-01-27.17:29:41.616 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - --> POST https://pro-share-aws-api.zcyai.com/v1/chat/completions
+24-01-27.17:29:41.616 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Content-Type: application/json; charset=utf-8
+24-01-27.17:29:41.616 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Content-Length: 217
+24-01-27.17:29:41.616 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Accept: text/event-stream
+24-01-27.17:29:41.616 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - --> END POST
+24-01-27.17:29:44.187 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - <-- 200 OK https://pro-share-aws-api.zcyai.com/v1/chat/completions?token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ4ZmciLCJleHAiOjE2OTAwMzI5MDQsImlhdCI6MTY5MDAyOTMwNCwianRpIjoiOTBkNzc5NjYtOWM5MS00MGVmLWJmNjktNzYzNDljNmUyMDkyIiwidXNlcm5hbWUiOiJ4ZmcifQ.x7P6Rc249SgbxpqWhgKahYP8A8AllNI_26DV08a1AZs (2570ms)
+24-01-27.17:29:44.187 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Content-Type: text/event-stream
+24-01-27.17:29:44.187 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Transfer-Encoding: chunked
+24-01-27.17:29:44.187 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Connection: keep-alive
+24-01-27.17:29:44.187 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Cache-Control: no-cache
+24-01-27.17:29:44.187 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Oneapi-Request-Id: 20240127172942702646583gWVkHgbX
+24-01-27.17:29:44.187 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Date: Sat, 27 Jan 2024 09:29:43 GMT
+24-01-27.17:29:44.187 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Cache: Miss from cloudfront
+24-01-27.17:29:44.187 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Via: 1.1 5dbbe1c6db9a003131a63be8ded250a4.cloudfront.net (CloudFront)
+24-01-27.17:29:44.187 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Amz-Cf-Pop: FRA56-P8
+24-01-27.17:29:44.188 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Alt-Svc: h3=":443"; ma=86400
+24-01-27.17:29:44.188 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Amz-Cf-Id: 2sGVngOtFldExrBR9RmVHwAsd8DxDGsbcU-VEL0Stl3uDgJa57k3kA==
+24-01-27.17:29:44.188 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-XSS-Protection: 1; mode=block
+24-01-27.17:29:44.188 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Frame-Options: SAMEORIGIN
+24-01-27.17:29:44.188 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Referrer-Policy: strict-origin-when-cross-origin
+24-01-27.17:29:44.188 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Content-Type-Options: nosniff
+24-01-27.17:29:44.188 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Strict-Transport-Security: max-age=31536000
+24-01-27.17:29:44.188 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Vary: Origin
+24-01-27.17:29:44.188 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - <-- END HTTP
+24-01-27.17:29:44.628 [http-nio-8090-exec-3] INFO  AbstractChatService    - 流式问答请求完成，使用模型：gpt-3.5-turbo
+24-01-27.17:30:13.968 [http-nio-8090-exec-4] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：gpt-3.5-turbo 请求信息：[{"content":"test","role":"user"},{"content":"您好！请问您需要什么样的帮助呢？","role":"system"},{"content":"你是哪个模型？","role":"user"}]
+24-01-27.17:30:13.972 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - --> POST https://pro-share-aws-api.zcyai.com/v1/chat/completions
+24-01-27.17:30:13.972 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Content-Type: application/json; charset=utf-8
+24-01-27.17:30:13.972 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Content-Length: 279
+24-01-27.17:30:13.972 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Accept: text/event-stream
+24-01-27.17:30:13.972 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - --> END POST
+24-01-27.17:30:15.209 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - <-- 200 OK https://pro-share-aws-api.zcyai.com/v1/chat/completions?token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ4ZmciLCJleHAiOjE2OTAwMzI5MDQsImlhdCI6MTY5MDAyOTMwNCwianRpIjoiOTBkNzc5NjYtOWM5MS00MGVmLWJmNjktNzYzNDljNmUyMDkyIiwidXNlcm5hbWUiOiJ4ZmcifQ.x7P6Rc249SgbxpqWhgKahYP8A8AllNI_26DV08a1AZs (1236ms)
+24-01-27.17:30:15.210 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Content-Type: text/event-stream
+24-01-27.17:30:15.210 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Transfer-Encoding: chunked
+24-01-27.17:30:15.210 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Connection: keep-alive
+24-01-27.17:30:15.210 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Cache-Control: no-cache
+24-01-27.17:30:15.210 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Oneapi-Request-Id: 2024012717301467666947SB64BOpx
+24-01-27.17:30:15.210 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Date: Sat, 27 Jan 2024 09:30:14 GMT
+24-01-27.17:30:15.210 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Cache: Miss from cloudfront
+24-01-27.17:30:15.211 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Via: 1.1 5dbbe1c6db9a003131a63be8ded250a4.cloudfront.net (CloudFront)
+24-01-27.17:30:15.211 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Amz-Cf-Pop: FRA56-P8
+24-01-27.17:30:15.211 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Alt-Svc: h3=":443"; ma=86400
+24-01-27.17:30:15.211 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Amz-Cf-Id: uYJtWJRpF0TU0mxi_IYL9LydJX9wPlhNkuAmV7t0xLH5cbVBTcsyPw==
+24-01-27.17:30:15.211 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-XSS-Protection: 1; mode=block
+24-01-27.17:30:15.211 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Frame-Options: SAMEORIGIN
+24-01-27.17:30:15.211 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Referrer-Policy: strict-origin-when-cross-origin
+24-01-27.17:30:15.211 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Content-Type-Options: nosniff
+24-01-27.17:30:15.211 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Strict-Transport-Security: max-age=31536000
+24-01-27.17:30:15.211 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Vary: Origin
+24-01-27.17:30:15.212 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - <-- END HTTP
+24-01-27.17:30:17.553 [http-nio-8090-exec-5] INFO  AbstractChatService    - 流式问答请求完成，使用模型：gpt-3.5-turbo
+24-01-27.17:30:43.729 [http-nio-8090-exec-6] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：gpt-3.5-turbo 请求信息：[{"content":"请问有什么需要帮助的吗？","role":"system"},{"content":"我想让你担任Java开发工程师面试官。我将成为候选人，您将向我询问Java开发工程师职位的面试问题。我希望你只作为面试官回答。不要一次写出所有的问题。我希望你只对我进行采访。问我问题，等待我的回答。不要写解释。像面试官一样一个一个问我，等我回答。我的第一句话是“面试官你好","role":"user"}]
+24-01-27.17:30:43.734 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - --> POST https://pro-share-aws-api.zcyai.com/v1/chat/completions
+24-01-27.17:30:43.734 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Content-Type: application/json; charset=utf-8
+24-01-27.17:30:43.734 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Content-Length: 605
+24-01-27.17:30:43.734 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Accept: text/event-stream
+24-01-27.17:30:43.734 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - --> END POST
+24-01-27.17:30:45.053 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - <-- 200 OK https://pro-share-aws-api.zcyai.com/v1/chat/completions?token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ4ZmciLCJleHAiOjE2OTAwMzI5MDQsImlhdCI6MTY5MDAyOTMwNCwianRpIjoiOTBkNzc5NjYtOWM5MS00MGVmLWJmNjktNzYzNDljNmUyMDkyIiwidXNlcm5hbWUiOiJ4ZmcifQ.x7P6Rc249SgbxpqWhgKahYP8A8AllNI_26DV08a1AZs (1319ms)
+24-01-27.17:30:45.054 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Content-Type: text/event-stream
+24-01-27.17:30:45.054 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Transfer-Encoding: chunked
+24-01-27.17:30:45.054 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Connection: keep-alive
+24-01-27.17:30:45.054 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Cache-Control: no-cache
+24-01-27.17:30:45.054 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Oneapi-Request-Id: 20240127173043817523382IBZt1BEp
+24-01-27.17:30:45.054 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Date: Sat, 27 Jan 2024 09:30:44 GMT
+24-01-27.17:30:45.054 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Cache: Miss from cloudfront
+24-01-27.17:30:45.054 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Via: 1.1 5dbbe1c6db9a003131a63be8ded250a4.cloudfront.net (CloudFront)
+24-01-27.17:30:45.054 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Amz-Cf-Pop: FRA56-P8
+24-01-27.17:30:45.054 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Alt-Svc: h3=":443"; ma=86400
+24-01-27.17:30:45.055 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Amz-Cf-Id: dzoGhRjp7duntt1aiAxxXTg7HjnOWfssmj_aFVcn_cxSMBLiAppzCQ==
+24-01-27.17:30:45.055 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-XSS-Protection: 1; mode=block
+24-01-27.17:30:45.055 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Frame-Options: SAMEORIGIN
+24-01-27.17:30:45.055 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Referrer-Policy: strict-origin-when-cross-origin
+24-01-27.17:30:45.055 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Content-Type-Options: nosniff
+24-01-27.17:30:45.055 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Strict-Transport-Security: max-age=31536000
+24-01-27.17:30:45.055 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Vary: Origin
+24-01-27.17:30:45.055 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - <-- END HTTP
+24-01-27.17:30:47.189 [http-nio-8090-exec-7] INFO  AbstractChatService    - 流式问答请求完成，使用模型：gpt-3.5-turbo
+24-01-27.17:30:52.763 [http-nio-8090-exec-8] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：gpt-3.5-turbo 请求信息：[{"content":"我想让你担任Java开发工程师面试官。我将成为候选人，您将向我询问Java开发工程师职位的面试问题。我希望你只作为面试官回答。不要一次写出所有的问题。我希望你只对我进行采访。问我问题，等待我的回答。不要写解释。像面试官一样一个一个问我，等我回答。我的第一句话是“面试官你好","role":"user"},{"content":"面试官：你好！感谢你对Java开发工程师职位的兴趣。我们将进行一些面试问题，以了解你的技能和经验。首先，我想问你在Java开发方面有多少年的经验？","role":"system"},{"content":"3年
+","role":"user"}]
+24-01-27.17:30:52.768 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - --> POST https://pro-share-aws-api.zcyai.com/v1/chat/completions
+24-01-27.17:30:52.768 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Content-Type: application/json; charset=utf-8
+24-01-27.17:30:52.768 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Content-Length: 807
+24-01-27.17:30:52.768 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Accept: text/event-stream
+24-01-27.17:30:52.768 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - --> END POST
+24-01-27.17:30:53.881 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - <-- 200 OK https://pro-share-aws-api.zcyai.com/v1/chat/completions?token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ4ZmciLCJleHAiOjE2OTAwMzI5MDQsImlhdCI6MTY5MDAyOTMwNCwianRpIjoiOTBkNzc5NjYtOWM5MS00MGVmLWJmNjktNzYzNDljNmUyMDkyIiwidXNlcm5hbWUiOiJ4ZmcifQ.x7P6Rc249SgbxpqWhgKahYP8A8AllNI_26DV08a1AZs (1112ms)
+24-01-27.17:30:53.881 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Content-Type: text/event-stream
+24-01-27.17:30:53.881 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Transfer-Encoding: chunked
+24-01-27.17:30:53.881 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Connection: keep-alive
+24-01-27.17:30:53.881 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Cache-Control: no-cache
+24-01-27.17:30:53.881 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Oneapi-Request-Id: 20240127173052855329311PO831Z7u
+24-01-27.17:30:53.881 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Date: Sat, 27 Jan 2024 09:30:53 GMT
+24-01-27.17:30:53.882 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Cache: Miss from cloudfront
+24-01-27.17:30:53.882 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Via: 1.1 5dbbe1c6db9a003131a63be8ded250a4.cloudfront.net (CloudFront)
+24-01-27.17:30:53.882 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Amz-Cf-Pop: FRA56-P8
+24-01-27.17:30:53.882 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Alt-Svc: h3=":443"; ma=86400
+24-01-27.17:30:53.882 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Amz-Cf-Id: gA4X6oN3wv3lsGBObgt5zkxofq9u3sh8S2u9d8hQUG5lsdMjUvrjPw==
+24-01-27.17:30:53.882 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-XSS-Protection: 1; mode=block
+24-01-27.17:30:53.882 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Frame-Options: SAMEORIGIN
+24-01-27.17:30:53.882 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Referrer-Policy: strict-origin-when-cross-origin
+24-01-27.17:30:53.882 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Content-Type-Options: nosniff
+24-01-27.17:30:53.882 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Strict-Transport-Security: max-age=31536000
+24-01-27.17:30:53.882 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Vary: Origin
+24-01-27.17:30:53.882 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - <-- END HTTP
+24-01-27.17:30:54.760 [http-nio-8090-exec-9] INFO  AbstractChatService    - 流式问答请求完成，使用模型：gpt-3.5-turbo
+24-01-27.17:31:33.972 [http-nio-8090-exec-10] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：gpt-3.5-turbo 请求信息：[{"content":"3年
+","role":"user"},{"content":"面试官：很好，那么请问你在Java开发中最熟悉的技术栈是什么？","role":"system"},{"content":"SpringBoot和SpringMVC以及一些中间件比如redis等
+","role":"user"}]
+24-01-27.17:31:33.974 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - --> POST https://pro-share-aws-api.zcyai.com/v1/chat/completions
+24-01-27.17:31:33.974 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Content-Type: application/json; charset=utf-8
+24-01-27.17:31:33.974 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Content-Length: 356
+24-01-27.17:31:33.974 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Accept: text/event-stream
+24-01-27.17:31:33.974 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - --> END POST
+24-01-27.17:31:35.182 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - <-- 200 OK https://pro-share-aws-api.zcyai.com/v1/chat/completions?token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ4ZmciLCJleHAiOjE2OTAwMzI5MDQsImlhdCI6MTY5MDAyOTMwNCwianRpIjoiOTBkNzc5NjYtOWM5MS00MGVmLWJmNjktNzYzNDljNmUyMDkyIiwidXNlcm5hbWUiOiJ4ZmcifQ.x7P6Rc249SgbxpqWhgKahYP8A8AllNI_26DV08a1AZs (1207ms)
+24-01-27.17:31:35.182 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Content-Type: text/event-stream
+24-01-27.17:31:35.182 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Transfer-Encoding: chunked
+24-01-27.17:31:35.183 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Connection: keep-alive
+24-01-27.17:31:35.183 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Cache-Control: no-cache
+24-01-27.17:31:35.183 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Oneapi-Request-Id: 2024012717313458320397mi73tUQA
+24-01-27.17:31:35.183 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Date: Sat, 27 Jan 2024 09:31:34 GMT
+24-01-27.17:31:35.183 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Cache: Miss from cloudfront
+24-01-27.17:31:35.183 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Via: 1.1 5dbbe1c6db9a003131a63be8ded250a4.cloudfront.net (CloudFront)
+24-01-27.17:31:35.183 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Amz-Cf-Pop: FRA56-P8
+24-01-27.17:31:35.183 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Alt-Svc: h3=":443"; ma=86400
+24-01-27.17:31:35.183 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Amz-Cf-Id: 10PnX4BGIokuVHWXZJHtk3dwcZzcFlDpwatAtEyHgXcX7x6SunzsuA==
+24-01-27.17:31:35.183 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-XSS-Protection: 1; mode=block
+24-01-27.17:31:35.183 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Frame-Options: SAMEORIGIN
+24-01-27.17:31:35.183 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Referrer-Policy: strict-origin-when-cross-origin
+24-01-27.17:31:35.183 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Content-Type-Options: nosniff
+24-01-27.17:31:35.183 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Strict-Transport-Security: max-age=31536000
+24-01-27.17:31:35.183 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Vary: Origin
+24-01-27.17:31:35.183 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - <-- END HTTP
+24-01-27.17:31:35.979 [http-nio-8090-exec-1] INFO  AbstractChatService    - 流式问答请求完成，使用模型：gpt-3.5-turbo
+24-01-27.17:31:41.347 [http-nio-8090-exec-2] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：gpt-3.5-turbo 请求信息：[{"content":"SpringBoot和SpringMVC以及一些中间件比如redis等
+","role":"user"},{"content":"面试官：很好，那么请问你在SpringBoot和SpringMVC方面有哪些项目经验呢？","role":"system"},{"content":"没有","role":"user"}]
+24-01-27.17:31:41.349 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - --> POST https://pro-share-aws-api.zcyai.com/v1/chat/completions
+24-01-27.17:31:41.349 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Content-Type: application/json; charset=utf-8
+24-01-27.17:31:41.349 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Content-Length: 365
+24-01-27.17:31:41.350 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Accept: text/event-stream
+24-01-27.17:31:41.350 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - --> END POST
+24-01-27.17:31:42.471 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - <-- 200 OK https://pro-share-aws-api.zcyai.com/v1/chat/completions?token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ4ZmciLCJleHAiOjE2OTAwMzI5MDQsImlhdCI6MTY5MDAyOTMwNCwianRpIjoiOTBkNzc5NjYtOWM5MS00MGVmLWJmNjktNzYzNDljNmUyMDkyIiwidXNlcm5hbWUiOiJ4ZmcifQ.x7P6Rc249SgbxpqWhgKahYP8A8AllNI_26DV08a1AZs (1121ms)
+24-01-27.17:31:42.471 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Content-Type: text/event-stream
+24-01-27.17:31:42.471 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Transfer-Encoding: chunked
+24-01-27.17:31:42.471 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Connection: keep-alive
+24-01-27.17:31:42.471 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Cache-Control: no-cache
+24-01-27.17:31:42.471 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Oneapi-Request-Id: 20240127173141434981065xOa2sAh3
+24-01-27.17:31:42.471 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Date: Sat, 27 Jan 2024 09:31:42 GMT
+24-01-27.17:31:42.471 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Cache: Miss from cloudfront
+24-01-27.17:31:42.471 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Via: 1.1 5dbbe1c6db9a003131a63be8ded250a4.cloudfront.net (CloudFront)
+24-01-27.17:31:42.472 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Amz-Cf-Pop: FRA56-P8
+24-01-27.17:31:42.472 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Alt-Svc: h3=":443"; ma=86400
+24-01-27.17:31:42.472 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Amz-Cf-Id: qfm6ECVqnJ-v4LEt3mW7cUtmRa-caiUPhBlGqvl5qk9FEgPs7frc3A==
+24-01-27.17:31:42.472 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-XSS-Protection: 1; mode=block
+24-01-27.17:31:42.472 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Frame-Options: SAMEORIGIN
+24-01-27.17:31:42.472 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Referrer-Policy: strict-origin-when-cross-origin
+24-01-27.17:31:42.472 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Content-Type-Options: nosniff
+24-01-27.17:31:42.472 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Strict-Transport-Security: max-age=31536000
+24-01-27.17:31:42.472 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Vary: Origin
+24-01-27.17:31:42.472 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - <-- END HTTP
+24-01-27.17:31:43.207 [http-nio-8090-exec-3] INFO  AbstractChatService    - 流式问答请求完成，使用模型：gpt-3.5-turbo
+24-01-27.17:36:18.335 [http-nio-8090-exec-6] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：gpt-3.5-turbo 请求信息：[{"content":"请问有什么需要帮助的吗？","role":"system"},{"content":"你好","role":"user"}]
+24-01-27.17:36:18.337 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - --> POST https://pro-share-aws-api.zcyai.com/v1/chat/completions
+24-01-27.17:36:18.337 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Content-Type: application/json; charset=utf-8
+24-01-27.17:36:18.338 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Content-Length: 219
+24-01-27.17:36:18.338 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Accept: text/event-stream
+24-01-27.17:36:18.338 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - --> END POST
+24-01-27.17:39:18.507 [http-nio-8090-exec-7] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.web.context.request.async.AsyncRequestTimeoutException]
+24-01-27.17:39:18.508 [http-nio-8090-exec-7] INFO  AbstractChatService    - 流式问答请求完成，使用模型：gpt-3.5-turbo
+24-01-27.17:39:18.526 [http-nio-8090-exec-7] INFO  AbstractChatService    - 流式问答请求完成，使用模型：gpt-3.5-turbo
+24-01-27.17:39:24.020 [http-nio-8090-exec-9] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：gpt-3.5-turbo 请求信息：[{"content":"请问有什么需要帮助的吗？","role":"system"},{"content":"你现在是一个最优秀的法律顾问专家，你具备众多案件官司的专业知识，你可以需要以普通未学习过法律知识的伙伴提供帮助。","role":"user"}]
+24-01-27.17:39:24.022 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - --> POST https://pro-share-aws-api.zcyai.com/v1/chat/completions
+24-01-27.17:39:24.023 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Content-Type: application/json; charset=utf-8
+24-01-27.17:39:24.023 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Content-Length: 381
+24-01-27.17:39:24.023 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Accept: text/event-stream
+24-01-27.17:39:24.023 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - --> END POST
+24-01-27.17:39:26.839 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - <-- 200 OK https://pro-share-aws-api.zcyai.com/v1/chat/completions?token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ4ZmciLCJleHAiOjE2OTAwMzI5MDQsImlhdCI6MTY5MDAyOTMwNCwianRpIjoiOTBkNzc5NjYtOWM5MS00MGVmLWJmNjktNzYzNDljNmUyMDkyIiwidXNlcm5hbWUiOiJ4ZmcifQ.x7P6Rc249SgbxpqWhgKahYP8A8AllNI_26DV08a1AZs (2815ms)
+24-01-27.17:39:26.839 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Content-Type: text/event-stream
+24-01-27.17:39:26.839 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Transfer-Encoding: chunked
+24-01-27.17:39:26.839 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Connection: keep-alive
+24-01-27.17:39:26.839 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Cache-Control: no-cache
+24-01-27.17:39:26.839 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Oneapi-Request-Id: 20240127173925403828008y2N2VcLZ
+24-01-27.17:39:26.839 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Date: Sat, 27 Jan 2024 09:39:26 GMT
+24-01-27.17:39:26.839 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Cache: Miss from cloudfront
+24-01-27.17:39:26.839 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Via: 1.1 74cd4e6bd806cc7209ac94e0173f5ac8.cloudfront.net (CloudFront)
+24-01-27.17:39:26.839 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Amz-Cf-Pop: FRA56-P8
+24-01-27.17:39:26.839 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Alt-Svc: h3=":443"; ma=86400
+24-01-27.17:39:26.839 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Amz-Cf-Id: faDQxx6tzUFhTyK-VXzHXO1a-ErEmvzC4aVehYFVh3UUUrhiaf7gKg==
+24-01-27.17:39:26.839 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-XSS-Protection: 1; mode=block
+24-01-27.17:39:26.839 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Frame-Options: SAMEORIGIN
+24-01-27.17:39:26.839 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Referrer-Policy: strict-origin-when-cross-origin
+24-01-27.17:39:26.839 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Content-Type-Options: nosniff
+24-01-27.17:39:26.839 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Strict-Transport-Security: max-age=31536000
+24-01-27.17:39:26.839 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Vary: Origin
+24-01-27.17:39:26.839 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - <-- END HTTP
+24-01-27.17:39:31.723 [http-nio-8090-exec-10] INFO  AbstractChatService    - 流式问答请求完成，使用模型：gpt-3.5-turbo
+24-01-27.17:39:46.380 [http-nio-8090-exec-1] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：gpt-3.5-turbo 请求信息：[{"content":"你现在是一个最优秀的法律顾问专家，你具备众多案件官司的专业知识，你可以需要以普通未学习过法律知识的伙伴提供帮助。","role":"user"},{"content":"非常感谢您对我的专业知识的认可。作为一个AI助手，我可以提供一些基本的法律信息和建议，但请注意，我并不是一位真正的法律顾问，也不能代替专业的法律咨询。如果您有具体的法律问题或需要法律建议，我建议您咨询一位合格的法律专家或律师。他们可以根据您的具体情况提供更准确和可靠的法律帮助。","role":"system"},{"content":"你现在是谁？ ","role":"user"}]
+24-01-27.17:39:46.383 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - --> POST https://pro-share-aws-api.zcyai.com/v1/chat/completions
+24-01-27.17:39:46.383 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Content-Type: application/json; charset=utf-8
+24-01-27.17:39:46.383 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Content-Length: 806
+24-01-27.17:39:46.383 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Accept: text/event-stream
+24-01-27.17:39:46.383 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - --> END POST
+24-01-27.17:39:47.525 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - <-- 200 OK https://pro-share-aws-api.zcyai.com/v1/chat/completions?token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ4ZmciLCJleHAiOjE2OTAwMzI5MDQsImlhdCI6MTY5MDAyOTMwNCwianRpIjoiOTBkNzc5NjYtOWM5MS00MGVmLWJmNjktNzYzNDljNmUyMDkyIiwidXNlcm5hbWUiOiJ4ZmcifQ.x7P6Rc249SgbxpqWhgKahYP8A8AllNI_26DV08a1AZs (1141ms)
+24-01-27.17:39:47.525 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Content-Type: text/event-stream
+24-01-27.17:39:47.525 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Transfer-Encoding: chunked
+24-01-27.17:39:47.525 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Connection: keep-alive
+24-01-27.17:39:47.525 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Cache-Control: no-cache
+24-01-27.17:39:47.525 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Oneapi-Request-Id: 20240127173946462983796fvHOkXiR
+24-01-27.17:39:47.526 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Date: Sat, 27 Jan 2024 09:39:47 GMT
+24-01-27.17:39:47.526 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Cache: Miss from cloudfront
+24-01-27.17:39:47.526 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Via: 1.1 74cd4e6bd806cc7209ac94e0173f5ac8.cloudfront.net (CloudFront)
+24-01-27.17:39:47.526 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Amz-Cf-Pop: FRA56-P8
+24-01-27.17:39:47.526 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Alt-Svc: h3=":443"; ma=86400
+24-01-27.17:39:47.526 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Amz-Cf-Id: YHvOxFqY0L3NSnp_STA68P0LzKcKAQsjEqR_5tW8Om-MVeHTMZR2GA==
+24-01-27.17:39:47.526 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-XSS-Protection: 1; mode=block
+24-01-27.17:39:47.526 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Frame-Options: SAMEORIGIN
+24-01-27.17:39:47.526 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Referrer-Policy: strict-origin-when-cross-origin
+24-01-27.17:39:47.526 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Content-Type-Options: nosniff
+24-01-27.17:39:47.526 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Strict-Transport-Security: max-age=31536000
+24-01-27.17:39:47.526 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Vary: Origin
+24-01-27.17:39:47.526 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - <-- END HTTP
+24-01-27.17:39:51.312 [http-nio-8090-exec-2] INFO  AbstractChatService    - 流式问答请求完成，使用模型：gpt-3.5-turbo
+24-01-27.17:43:48.342 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - <-- HTTP FAILED: java.net.SocketTimeoutException: timeout
+24-01-27.18:57:43.280 [http-nio-8090-exec-5] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：text-davinci-003 请求信息：[{"content":"请问有什么需要帮助的吗？","role":"0"},{"content":"# 你好
+## test","role":"1"},{"content":"test","role":"user"}]
+24-01-27.18:57:44.968 [http-nio-8090-exec-5] ERROR ChatGPTAIServiceController - 流式应答，请求模型：text-davinci-003 发生异常
+cn.rayce.types.exception.ChatGPTException: null
+	at cn.rayce.domain.openai.service.AbstractChatService.completions(AbstractChatService.java:41)
+	at cn.rayce.trigger.http.ChatGPTAIServiceController.completionsStream(ChatGPTAIServiceController.java:53)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+24-01-27.18:57:44.970 [http-nio-8090-exec-5] ERROR [dispatcherServlet]    - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is cn.rayce.types.exception.ChatGPTException] with root cause
+cn.rayce.types.exception.ChatGPTException: null
+	at cn.rayce.trigger.http.ChatGPTAIServiceController.completionsStream(ChatGPTAIServiceController.java:56)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+24-01-27.18:57:56.389 [http-nio-8090-exec-6] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：gpt-3.5-turbo 请求信息：[{"content":"test","role":"user"},{"content":"{\"timestamp\":\"2024-01-27T10:57:44.972+00:00\",\"status\":500,\"error\":\"Internal Server Error\",\"path\":\"/api/v1/chat/completions\"}","role":"system"},{"content":"test","role":"user"}]
+24-01-27.18:57:56.392 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - --> POST https://pro-share-aws-api.zcyai.com/v1/chat/completions
+24-01-27.18:57:56.392 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Content-Type: application/json; charset=utf-8
+24-01-27.18:57:56.392 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Content-Length: 352
+24-01-27.18:57:56.392 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Accept: text/event-stream
+24-01-27.18:57:56.392 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - --> END POST
+24-01-27.18:57:59.046 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - <-- 200 OK https://pro-share-aws-api.zcyai.com/v1/chat/completions?token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ4ZmciLCJleHAiOjE2OTAwMzI5MDQsImlhdCI6MTY5MDAyOTMwNCwianRpIjoiOTBkNzc5NjYtOWM5MS00MGVmLWJmNjktNzYzNDljNmUyMDkyIiwidXNlcm5hbWUiOiJ4ZmcifQ.x7P6Rc249SgbxpqWhgKahYP8A8AllNI_26DV08a1AZs (2653ms)
+24-01-27.18:57:59.046 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Content-Type: text/event-stream
+24-01-27.18:57:59.046 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Transfer-Encoding: chunked
+24-01-27.18:57:59.046 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Connection: keep-alive
+24-01-27.18:57:59.046 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Cache-Control: no-cache
+24-01-27.18:57:59.046 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Oneapi-Request-Id: 20240127185757819137050fAPwBd8T
+24-01-27.18:57:59.046 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Date: Sat, 27 Jan 2024 10:57:58 GMT
+24-01-27.18:57:59.046 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Cache: Miss from cloudfront
+24-01-27.18:57:59.047 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Via: 1.1 1feab8d6a8e5cc920c359b62fd33d3de.cloudfront.net (CloudFront)
+24-01-27.18:57:59.047 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Amz-Cf-Pop: FRA56-P8
+24-01-27.18:57:59.047 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Alt-Svc: h3=":443"; ma=86400
+24-01-27.18:57:59.047 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Amz-Cf-Id: 9za74ZsPQc7yFg3ghwvRK4XqB_sp8i-v7zRwqVWKC_WujsdnRO1kTQ==
+24-01-27.18:57:59.047 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-XSS-Protection: 1; mode=block
+24-01-27.18:57:59.047 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Frame-Options: SAMEORIGIN
+24-01-27.18:57:59.047 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Referrer-Policy: strict-origin-when-cross-origin
+24-01-27.18:57:59.047 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Content-Type-Options: nosniff
+24-01-27.18:57:59.047 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Strict-Transport-Security: max-age=31536000
+24-01-27.18:57:59.047 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Vary: Origin
+24-01-27.18:57:59.047 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - <-- END HTTP
+24-01-27.18:57:59.608 [http-nio-8090-exec-7] INFO  AbstractChatService    - 流式问答请求完成，使用模型：gpt-3.5-turbo
+24-01-27.18:58:14.808 [http-nio-8090-exec-8] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：gpt-3.5-turbo 请求信息：[{"content":"test","role":"user"},{"content":"I apologize, but it seems that there is an internal server error at the moment. Please try again later.","role":"system"},{"content":"what","role":"user"}]
+24-01-27.18:58:14.811 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - --> POST https://pro-share-aws-api.zcyai.com/v1/chat/completions
+24-01-27.18:58:14.811 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Content-Type: application/json; charset=utf-8
+24-01-27.18:58:14.811 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Content-Length: 317
+24-01-27.18:58:14.811 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Accept: text/event-stream
+24-01-27.18:58:14.811 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - --> END POST
+24-01-27.18:58:15.947 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - <-- 200 OK https://pro-share-aws-api.zcyai.com/v1/chat/completions?token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ4ZmciLCJleHAiOjE2OTAwMzI5MDQsImlhdCI6MTY5MDAyOTMwNCwianRpIjoiOTBkNzc5NjYtOWM5MS00MGVmLWJmNjktNzYzNDljNmUyMDkyIiwidXNlcm5hbWUiOiJ4ZmcifQ.x7P6Rc249SgbxpqWhgKahYP8A8AllNI_26DV08a1AZs (1135ms)
+24-01-27.18:58:15.947 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Content-Type: text/event-stream
+24-01-27.18:58:15.947 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Transfer-Encoding: chunked
+24-01-27.18:58:15.947 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Connection: keep-alive
+24-01-27.18:58:15.947 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Cache-Control: no-cache
+24-01-27.18:58:15.947 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Oneapi-Request-Id: 20240127185815129178080I9aPIWk3
+24-01-27.18:58:15.947 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Date: Sat, 27 Jan 2024 10:58:15 GMT
+24-01-27.18:58:15.947 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Cache: Miss from cloudfront
+24-01-27.18:58:15.947 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Via: 1.1 1feab8d6a8e5cc920c359b62fd33d3de.cloudfront.net (CloudFront)
+24-01-27.18:58:15.947 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Amz-Cf-Pop: FRA56-P8
+24-01-27.18:58:15.948 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Alt-Svc: h3=":443"; ma=86400
+24-01-27.18:58:15.948 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Amz-Cf-Id: t0XnQLn0P6ZHO55cxHFs8h00R4QzHyu8EdKwtALd0uyt2VjpraZu2w==
+24-01-27.18:58:15.948 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-XSS-Protection: 1; mode=block
+24-01-27.18:58:15.948 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Frame-Options: SAMEORIGIN
+24-01-27.18:58:15.948 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Referrer-Policy: strict-origin-when-cross-origin
+24-01-27.18:58:15.948 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - X-Content-Type-Options: nosniff
+24-01-27.18:58:15.948 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Strict-Transport-Security: max-age=31536000
+24-01-27.18:58:15.948 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - Vary: Origin
+24-01-27.18:58:15.948 [OkHttp https://pro-share-aws-api.zcyai.com/...] INFO  OkHttpClient           - <-- END HTTP
+24-01-27.18:58:16.234 [http-nio-8090-exec-9] INFO  AbstractChatService    - 流式问答请求完成，使用模型：gpt-3.5-turbo
+24-01-27.20:53:55.905 [main            ] INFO  Application            - Starting Application using Java 1.8.0_201 on Rayce with PID 30092 (/home/rayce/Udatabase/study/Gpt_Item/PlanetItemGpt-data/chatgpt-data-app/target/classes started by rayce in /home/rayce/Udatabase/study/Gpt_Item/PlanetItemGpt-data)
+24-01-27.20:53:55.907 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-01-27.20:53:56.464 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8090 (http)
+24-01-27.20:53:56.469 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+24-01-27.20:53:56.469 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-01-27.20:53:56.469 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-01-27.20:53:56.541 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-01-27.20:53:56.541 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 611 ms
+24-01-27.20:53:56.885 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
+24-01-27.20:53:56.893 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8090 (http) with context path ''
+24-01-27.20:53:56.899 [main            ] INFO  Application            - Started Application in 1.384 seconds (JVM running for 1.87)

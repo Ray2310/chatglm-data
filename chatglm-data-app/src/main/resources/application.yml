@@ -1,0 +1,5 @@
+spring:
+  config:
+    name: chatglm-data
+  profiles:
+    active: dev

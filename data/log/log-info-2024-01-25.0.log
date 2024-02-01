@@ -1,0 +1,98 @@
+24-01-25.16:47:45.523 [main            ] INFO  Application            - Starting Application using Java 1.8.0_201 on Rayce with PID 22825 (/home/rayce/Udatabase/study/Gpt_Item/PlanetItemGpt-data/chatgpt-data-app/target/classes started by rayce in /home/rayce/Udatabase/study/Gpt_Item/PlanetItemGpt-data)
+24-01-25.16:47:45.525 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-01-25.16:47:46.021 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8090 (http)
+24-01-25.16:47:46.026 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+24-01-25.16:47:46.027 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-01-25.16:47:46.027 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-01-25.16:47:46.092 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-01-25.16:47:46.092 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 539 ms
+24-01-25.16:47:46.293 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
+24-01-25.16:47:46.300 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8090 (http) with context path ''
+24-01-25.16:47:46.306 [main            ] INFO  Application            - Started Application in 1.108 seconds (JVM running for 1.411)
+24-01-25.16:48:33.554 [http-nio-8090-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+24-01-25.16:48:33.554 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+24-01-25.16:48:33.555 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Completed initialization in 1 ms
+24-01-25.16:53:34.501 [main            ] INFO  Application            - Starting Application using Java 1.8.0_201 on Rayce with PID 23390 (/home/rayce/Udatabase/study/Gpt_Item/PlanetItemGpt-data/chatgpt-data-app/target/classes started by rayce in /home/rayce/Udatabase/study/Gpt_Item/PlanetItemGpt-data)
+24-01-25.16:53:34.503 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-01-25.16:53:34.973 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8090 (http)
+24-01-25.16:53:34.978 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+24-01-25.16:53:34.979 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-01-25.16:53:34.979 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-01-25.16:53:35.041 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-01-25.16:53:35.042 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 509 ms
+24-01-25.16:53:35.242 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
+24-01-25.16:53:35.249 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8090 (http) with context path ''
+24-01-25.16:53:35.256 [main            ] INFO  Application            - Started Application in 1.083 seconds (JVM running for 1.33)
+24-01-25.16:53:40.486 [http-nio-8090-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+24-01-25.16:53:40.487 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+24-01-25.16:53:40.487 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Completed initialization in 0 ms
+24-01-25.17:01:24.105 [main            ] INFO  Application            - Starting Application using Java 1.8.0_201 on Rayce with PID 24277 (/home/rayce/Udatabase/study/Gpt_Item/PlanetItemGpt-data/chatgpt-data-app/target/classes started by rayce in /home/rayce/Udatabase/study/Gpt_Item/PlanetItemGpt-data)
+24-01-25.17:01:24.108 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-01-25.17:01:24.624 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8090 (http)
+24-01-25.17:01:24.628 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+24-01-25.17:01:24.628 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-01-25.17:01:24.628 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-01-25.17:01:24.690 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-01-25.17:01:24.690 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 553 ms
+24-01-25.17:01:24.891 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
+24-01-25.17:01:24.899 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8090 (http) with context path ''
+24-01-25.17:01:24.905 [main            ] INFO  Application            - Started Application in 1.21 seconds (JVM running for 1.515)
+24-01-25.17:01:41.322 [http-nio-8090-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+24-01-25.17:01:41.322 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+24-01-25.17:01:41.323 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Completed initialization in 0 ms
+24-01-25.17:02:48.320 [main            ] INFO  Application            - Starting Application using Java 1.8.0_201 on Rayce with PID 24482 (/home/rayce/Udatabase/study/Gpt_Item/PlanetItemGpt-data/chatgpt-data-app/target/classes started by rayce in /home/rayce/Udatabase/study/Gpt_Item/PlanetItemGpt-data)
+24-01-25.17:02:48.321 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-01-25.17:02:48.799 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8090 (http)
+24-01-25.17:02:48.803 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+24-01-25.17:02:48.803 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-01-25.17:02:48.804 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-01-25.17:02:48.864 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-01-25.17:02:48.864 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 516 ms
+24-01-25.17:02:49.057 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
+24-01-25.17:02:49.064 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8090 (http) with context path ''
+24-01-25.17:02:49.070 [main            ] INFO  Application            - Started Application in 1.098 seconds (JVM running for 1.348)
+24-01-25.17:02:52.602 [http-nio-8090-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+24-01-25.17:02:52.602 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+24-01-25.17:02:52.603 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Completed initialization in 1 ms
+24-01-25.17:16:25.494 [main            ] INFO  Application            - Starting Application using Java 1.8.0_201 on Rayce with PID 26077 (/home/rayce/Udatabase/study/Gpt_Item/PlanetItemGpt-data/chatgpt-data-app/target/classes started by rayce in /home/rayce/Udatabase/study/Gpt_Item/PlanetItemGpt-data)
+24-01-25.17:16:25.497 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-01-25.17:16:26.027 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8090 (http)
+24-01-25.17:16:26.031 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+24-01-25.17:16:26.032 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-01-25.17:16:26.032 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-01-25.17:16:26.092 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-01-25.17:16:26.092 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 560 ms
+24-01-25.17:16:26.290 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
+24-01-25.17:16:26.296 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8090 (http) with context path ''
+24-01-25.17:16:26.302 [main            ] INFO  Application            - Started Application in 1.105 seconds (JVM running for 1.387)
+24-01-25.17:18:07.290 [http-nio-8090-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+24-01-25.17:18:07.290 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+24-01-25.17:18:07.291 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Completed initialization in 1 ms
+24-01-25.17:40:38.296 [main            ] INFO  Application            - Starting Application using Java 1.8.0_201 on Rayce with PID 28004 (/home/rayce/Udatabase/study/Gpt_Item/PlanetItemGpt-data/chatgpt-data-app/target/classes started by rayce in /home/rayce/Udatabase/study/Gpt_Item/PlanetItemGpt-data)
+24-01-25.17:40:38.299 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-01-25.17:40:38.806 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8080 (http)
+24-01-25.17:40:38.810 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8080"]
+24-01-25.17:40:38.810 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-01-25.17:40:38.810 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-01-25.17:40:38.869 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-01-25.17:40:38.870 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 540 ms
+24-01-25.17:40:39.071 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8080"]
+24-01-25.17:40:39.078 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8080 (http) with context path ''
+24-01-25.17:40:39.084 [main            ] INFO  Application            - Started Application in 1.123 seconds (JVM running for 1.377)
+24-01-25.17:41:09.470 [http-nio-8080-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+24-01-25.17:41:09.470 [http-nio-8080-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+24-01-25.17:41:09.471 [http-nio-8080-exec-1] INFO  DispatcherServlet      - Completed initialization in 1 ms
+24-01-25.17:44:31.287 [main            ] INFO  Application            - Starting Application using Java 1.8.0_201 on Rayce with PID 28580 (/home/rayce/Udatabase/study/Gpt_Item/PlanetItemGpt-data/chatgpt-data-app/target/classes started by rayce in /home/rayce/Udatabase/study/Gpt_Item/PlanetItemGpt-data)
+24-01-25.17:44:31.290 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-01-25.17:44:31.843 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8090 (http)
+24-01-25.17:44:31.847 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+24-01-25.17:44:31.847 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-01-25.17:44:31.847 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-01-25.17:44:31.900 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-01-25.17:44:31.900 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 580 ms
+24-01-25.17:44:32.100 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
+24-01-25.17:44:32.107 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8090 (http) with context path ''
+24-01-25.17:44:32.113 [main            ] INFO  Application            - Started Application in 1.188 seconds (JVM running for 1.423)
+24-01-25.17:44:51.584 [http-nio-8090-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+24-01-25.17:44:51.585 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+24-01-25.17:44:51.585 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Completed initialization in 0 ms
