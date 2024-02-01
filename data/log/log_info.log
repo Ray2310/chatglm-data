@@ -3386,3 +3386,37 @@ cn.rayce.types.exception.ChatGPTException: null
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
+24-02-01.15:28:23.507 [main            ] INFO  Application            - Starting Application using Java 1.8.0_201 on Rayce with PID 13891 (/home/rayce/Udatabase/study/Gpt_Item/ChatGLM-data/chatglm-data-app/target/classes started by rayce in /home/rayce/Udatabase/study/Gpt_Item/ChatGLM-data)
+24-02-01.15:28:23.509 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-02-01.15:28:24.036 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8090 (http)
+24-02-01.15:28:24.041 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+24-02-01.15:28:24.041 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-02-01.15:28:24.041 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-02-01.15:28:24.105 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-02-01.15:28:24.105 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 564 ms
+24-02-01.15:28:24.451 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
+24-02-01.15:28:24.460 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8090 (http) with context path ''
+24-02-01.15:28:24.468 [main            ] INFO  Application            - Started Application in 1.296 seconds (JVM running for 1.552)
+24-02-01.15:28:31.117 [http-nio-8090-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+24-02-01.15:28:31.117 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+24-02-01.15:28:31.117 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Completed initialization in 0 ms
+24-02-01.15:28:31.203 [http-nio-8090-exec-1] INFO  ChatGLMAIServiceController - 流式问答请求开始，使用模型：glm-3-turbo 请求信息：[{"content":"写一个java冒泡排序","role":"user"}]
+24-02-01.15:28:31.222 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - --> POST https://open.bigmodel.cn/api/paas/v4/chat/completions
+24-02-01.15:28:31.222 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - Content-Type: application/json; charset=utf-8
+24-02-01.15:28:31.222 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - Content-Length: 196
+24-02-01.15:28:31.222 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - Accept: text/event-stream
+24-02-01.15:28:31.222 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - --> END POST
+24-02-01.15:28:32.238 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - <-- 200 https://open.bigmodel.cn/api/paas/v4/chat/completions (1015ms)
+24-02-01.15:28:32.238 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - Date: Thu, 01 Feb 2024 07:28:32 GMT
+24-02-01.15:28:32.238 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - Content-Type: text/event-stream;charset=UTF-8
+24-02-01.15:28:32.238 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - Transfer-Encoding: chunked
+24-02-01.15:28:32.238 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - Connection: close
+24-02-01.15:28:32.238 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - Set-Cookie: acw_tc=2760774317067725117781713e128e90ba4b09abcf300b2fbb03acb0398e68;path=/;HttpOnly;Max-Age=1800
+24-02-01.15:28:32.238 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - Server: nginx/1.21.6
+24-02-01.15:28:32.238 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - x-trace-id: 
+24-02-01.15:28:32.239 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - Vary: Origin
+24-02-01.15:28:32.239 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - Vary: Access-Control-Request-Method
+24-02-01.15:28:32.239 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - Vary: Access-Control-Request-Headers
+24-02-01.15:28:32.239 [OkHttp https://open.bigmodel.cn/...] INFO  OkHttpClient           - <-- END HTTP
+24-02-01.15:28:43.344 [OkHttp https://open.bigmodel.cn/...] INFO  ChatGLMAIServiceController - 对话完成
+24-02-01.15:28:43.349 [http-nio-8090-exec-2] INFO  ChatGLMAIServiceController - 流式问答请求完成，使用模型：glm-3-turbo
